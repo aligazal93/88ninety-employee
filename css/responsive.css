@@ -1,0 +1,12 @@
+@media only screen and (max-width:990px) {
+    .authSection .content {
+        padding: 0px 20px;
+    }
+    .authSection .content p
+    {
+        font-size: 14px;
+    }
+}
+@media only screen and (max-width:767px) {
+
+}

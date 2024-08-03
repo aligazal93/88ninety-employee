@@ -1,0 +1,548 @@
+@font-face
+{
+    font-family:popp-reg;
+    src: url(../fonts/popp-reg.ttf)
+}
+@font-face
+{
+    font-family:popp-bold;
+    src: url(../fonts/popp-bold.ttf)
+}
+body
+{
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100%;
+    background-color: rgb(247 247 247);
+    background-repeat: no-repeat;
+    font-family:popp-reg;
+    overflow-x: hidden!important;
+    position: relative;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+.the-after
+{
+    position: fixed;
+    left: 0;
+    width: 100%;
+    top: 0;
+    height: 100%;
+    background-color: #1D1D1D;
+    display: none;
+    z-index: 999999999999999999999;
+    opacity: 0.7;
+}
+img
+{
+    object-fit: contain !important;
+    object-position: center center !important;
+}
+ul
+{
+    padding: 0;
+    margin: 0 0 0px;
+    list-style: none;
+}
+p
+{
+    margin-bottom: 0;
+}
+a
+{
+    text-decoration: none!important;
+}
+.authSection
+{
+    padding: 50px 0px;
+}
+.authSection .logo img
+{
+    padding-bottom: 50px;
+}
+.authSection .content
+{
+}
+.authSection .content h2
+{
+    color: rgba(0, 0, 0, 1);
+    font-weight: 500;
+    font-size: 36px;
+}
+.authSection .content p
+{
+    color: rgba(0, 0, 0, 1);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+}
+.authSection .content form
+{
+    margin-top: 30px;
+}
+.authSection .content form label
+{
+    display: block;
+    color: rgba(0, 0, 0, 1);
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 6px;
+}
+.authSection .content form input
+{
+    background: #F5F5F5;
+    border: 1px solid #C0C0C0;
+    border-radius: 8px;
+    width: 100%;
+    position: relative;
+padding: 10px;
+    margin-bottom: 12px;
+    outline: none;
+}
+.authSection .content form .eye
+{
+    position: absolute;
+    right: 18px;
+    cursor: pointer;
+    bottom: 22px;
+    color: rgba(149, 149, 149, 1);
+    font-size: 18px;
+}
+.authSection .content .col-md-12 , .authSection .content .col-md-6
+{
+    padding: 0px;
+}
+.authSection .content .rememberMe
+{
+    margin: 5px 0px;
+}
+ .authSection .content .forgetPassword
+ {
+     margin: 9px 0px;
+     float: right;
+ }
+.authSection .content .forgetPassword a
+{
+    font-weight: bold;
+    font-size: 14px;
+    padding-top: 10px;
+    color: #489AEF;
+    transition: all .6s ease-in-out;
+}
+.authSection .content .forgetPassword a:hover
+{
+    color: rgba(255, 164, 6, 1);
+}
+.authSection .content .rememberMe label
+{
+    display: block;
+    position: relative;
+    padding-top: 3px;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 14px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.authSection .content .rememberMe label input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.authSection .content .rememberMe .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.authSection .content .rememberMe:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.authSection .content .rememberMe input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.authSection .content .rememberMe .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.authSection .content .rememberMe input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.authSection .content .rememberMe .checkmark:after
+{
+    left: 11px;
+    top: 7px;
+    width: 5px;
+    height: 11px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.authSection .content .login
+{
+    margin-top: 20px;
+    width: 100%;
+    display: block;
+    color: #fff;
+    padding: 12px;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    transition: all .6s  ease-in-out;
+    font-size: 18px;
+    background: #0090F5;
+    margin-bottom: 30px;
+    box-shadow: -2px 0px 6.1px rgba(0, 0, 0, 0.25), 2px 6px 6px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+}
+.authSection .content .login:hover
+{
+    background-color: rgba(255, 164, 6, 1);
+}
+.authSection .pic
+{
+    padding: 10px;
+}
+.authSection .pic img
+{
+    width: 100%;
+    transition: all .6s ease-in-out;
+}
+.authSection .pic img:hover
+{
+    transform: scale(1.1);
+}
+.authSection .content .backToSignIn
+{
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    color: rgba(149, 149, 149, 1);
+    transition: all .6s ease-in-out;
+    margin-bottom: 30px;
+}
+.authSection .content .backToSignIn:hover
+{
+    color:rgba(255, 164, 6, 1);
+}
+.authSection .content .backToSignIn i
+{
+    margin: 0px 6px;
+    font-size: 16px;
+    top: 1px;
+    position: relative;
+}
+.authSection .content ul
+{
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.authSection .content ul li
+{
+    color: rgba(126, 126, 126, 1);
+    line-height: 22px;
+    font-size: 12px;
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+.authSection .content ul li i
+{
+    font-size: 4px;
+    margin-right: 12px;
+}
+.sidebarPage
+{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 120px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 5px 0px;
+    gap: 56px;
+    background: #FFFFFF;
+    border-right: 1px solid #B7B7B7;
+    text-align: center;
+    height: 100%;
+}
+.sidebarPage .logo img
+{
+    padding: 12px;
+    width: 100%;
+}
+.sidebarPage ul
+{
+    margin-top: 20px;
+}
+.sidebarPage ul li
+{
+    margin-top: 35px;
+}
+.sidebarPage ul li img
+{
+    width: 20px !important;
+    display: block;
+    margin: 0 auto;
+    padding: 0px !important;
+    margin-bottom: 4px;
+}
+.sidebarPage ul li a
+{
+    color: rgba(0, 0, 0, 1);
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.sidebarPage ul li i
+{
+    display: block;
+    margin-bottom: 6px;
+    font-size: 20px;
+}
+.sidebarPage ul .active
+{
+    background: #EAEAEA;
+    border-radius: 8px;
+    padding: 6px 0px;
+}
+.sidebarPage ul .active img
+{
+    color: red;
+}
+.sidebarPage ul .active i
+{
+    color: rgba(0, 97, 165, 1);
+}
+.sidebarPage ul .active a
+{
+    color: rgba(0, 97, 165, 1)
+}
+.mainContent
+{
+    padding: 50px;
+    margin-top: 70px;
+}
+.mainHeader
+{
+    position: absolute;
+    left: 0px;
+    top: -70px;
+    width: 100%;
+    height: 105px;
+    align-items: center;
+    background: #FFFFFF;
+    text-align: center;
+    border-bottom: 1px solid #B7B7B7;
+    padding: 30px 30px;
+}
+.mainHeader .data
+{
+    float: right;
+}
+.mainHeader .data ul
+{
+    align-self: center;
+}
+.mainHeader .data ul li
+{
+    margin-right: 16px;
+    display: inline-block;
+    align-items: center;
+}
+.mainHeader .data ul li a
+{
+    color: rgba(0, 0, 0, 1);
+}
+.mainHeader .data ul li i
+{
+    font-size: 22px;
+}
+.mainHeader .data ul .info
+{
+    position: relative
+}
+.mainHeader .data ul .info i
+{
+    font-size: 16px;
+}
+.mainHeader .data ul .info button
+{
+    border: none;
+    background-color: transparent;
+}
+.mainHeader .data ul .info button img
+{
+    width: 45px;
+}
+.mainHeader .data .dropdown-menu
+{
+    left: -50px;
+    position: absolute;
+    top: 57px;
+}
+.mainHeader .data .dropdown-menu li
+{
+    width: 100%;
+}
+.mainHeader .data .dropdown-menu li i
+{
+    margin-right: 10px;
+    font-size: 12px;
+}
+.mainHeader .data .dropdown-menu::after{
+    content: '';
+    position: absolute;
+    left: 66%;
+    top: -10px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    background-color: #fff;
+    border-top: 10px solid #B7B7B7;
+    clear: both;
+    transform: rotate(180deg);
+}
+.mainContent .performance-content
+{
+    margin-top: 12px;
+}
+.mainContent .performance-content h4
+{
+    margin: 0px;
+    padding: 0px 0px;
+color: rgba(0, 0, 0, 1);
+    font-weight: 400;
+    font-size: 14px;
+}
+.mainContent .performance-content h2
+{
+    margin: 20px 0px;
+    padding: 0px 0px;
+    color: rgba(0, 0, 0, 1);
+    font-weight: 700;
+    font-size: 24px;
+}
+.mainContent .performance-content h5
+{
+    color: rgba(126, 126, 126, 1);
+    margin: 20px 0px;
+    padding: 0px 0px;
+    font-weight: 500;
+    font-size: 16px;
+}
+.mainContent .performance-content .table
+{
+    border: 1px solid rgba(192, 192, 192, 1);
+    background-color: #fff;
+}
+.mainContent .performance-content .table thead
+{
+    background: #F4FBFF;
+    border: 1px solid #C0C0C0;
+    text-align: center;
+}
+.mainContent .performance-content .table thead tr
+{
+    height: 50px;
+}
+.mainContent .performance-content .table thead tr th
+{
+    vertical-align: middle;
+}
+.mainContent .performance-content .table thead tr th
+{
+    text-align: center;
+}
+.mainContent .performance-content .table tbody tr
+{
+    text-align: center;
+    height: 50px;
+}
+.mainContent .performance-content .table tbody tr td , .mainContent .performance-content .table tbody tr th
+{
+    vertical-align: middle;
+    color: rgba(0, 0, 0, 1);
+    font-size: 14px;
+}
+.mainContent .performance-content .table tbody tr th
+{
+    padding-left: 15px;
+}
+.mainContent .performance-content .table tbody .due
+{
+
+    background: #FFFFCC;
+    border: 1px solid #CA9610;
+    border-radius: 50px;
+    padding: 7px 0px;
+    font-size: 10px;
+    color: rgba(202, 150, 16, 1);
+    font-weight: 700;
+    width: 95px;
+    display: block;
+    margin: 0 auto;
+}
+.mainContent .performance-content .table tbody .due i
+{
+color: rgba(202, 150, 16, 1);
+    margin-right: 8px;
+}
+.mainContent .performance-content .table tbody .completed
+{
+
+    background: rgba(233, 255, 235, 1);
+    border: 1px solid rgba(10, 148, 24, 1);
+    border-radius: 50px;
+    padding: 7px 0px;
+    font-size: 10px;
+    color: rgba(10, 148, 24, 1);
+    font-weight: 700;
+    width: 95px;
+    display: block;
+    margin: 0 auto;
+}
+.mainContent .performance-content .table tbody .completed i
+{
+    color: rgba(10, 148, 24, 1);
+    margin-right: 2px;
+    font-size: 10px;
+}
+.mainContent .performance-content .table tbody tr td a
+{
+    color: rgba(0, 144, 245, 1);
+    font-weight: 500;
+    font-size: 14px;
+    text-decoration: underline!important;
+}
