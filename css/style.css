@@ -352,6 +352,7 @@ padding: 10px;
 {
     padding: 50px;
     margin-top: 70px;
+    margin-left: 100px;
 }
 .mainHeader
 {
@@ -830,4 +831,271 @@ font-weight: bold;
     color: rgba(0, 0, 0, 1);
     margin-bottom: 12px;
     margin-top: 4px!important;
+}
+.errorPage
+{
+    margin: 80px 0px;
+}
+.errorPage img
+{
+    display: block;
+    margin: 0 auto;
+    width: 500px;
+    height: auto;
+}
+.mainContent #myEmployees h5
+{
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 1);
+}
+.mainContent #myEmployees h2
+{
+    font-weight: 700;
+    font-size: 24px;
+    color: rgba(0, 0, 0, 1);
+}
+.mainContent #myEmployees h2 a
+{
+    float: right;
+    align-items: center;
+    background: #0090F5;
+    box-shadow: -2px 0px 6.2px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 12px;
+    color: #fff;
+    border-radius: 8px;
+    width: 170px;
+    text-align: center;
+    padding: 14px;
+    margin-top: -20px;
+}
+.mainContent #myEmployees h2 a i
+{
+    margin-right: 3px;
+}
+.mainContent #myEmployees .formSearch
+{
+    margin-top: 20px;
+    width: 30%;
+}
+.mainContent #myEmployees .formSearch input
+{
+    width: 100%;
+    background: #FFFFFF;
+    border: 1px solid #C0C0C0;
+    border-radius: 8px;
+    outline: none;
+    padding: 10px;
+    position: relative;
+    padding-left: 40px;
+}
+.mainContent #myEmployees .formSearch span
+{
+    position: absolute;
+    left: 30px;
+    margin-top: 10px;
+    font-size: 16px;
+    color: rgba(126, 126, 126, 1);
+}
+.mainContent #myEmployees .formSearch h6
+{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    color: #7E7E7E;
+    margin-left: 5px;
+
+}
+.mainContent #myEmployees .moreIcons
+{
+    float: right;
+    margin-top: -70px;
+    width: 200px;
+    text-align: right;
+}
+.mainContent #myEmployees .moreIcons a i
+{
+    margin-left: 10px;
+    color: rgba(0, 0, 0, 1);
+    transition: all .6s ease-in-out;
+    font-size: 22px;
+}
+.mainContent #myEmployees .moreIcons a i:hover
+{
+    color: #204d74;
+}
+.mainContent #myEmployees .moreIcons a .arrows
+{
+    transform: rotate(270deg);
+}
+.mainContent #myEmployees .oneEmployee
+{
+    width: 100%;
+    padding: 10px;
+    float: left;
+    background: #FFFFFF;
+    border: 1px solid #C0C0C0;
+    border-radius: 12px;
+    margin-top: 30px;
+}
+.mainContent #myEmployees .oneEmployee .icons
+{
+    margin-top: 5px;
+}
+.mainContent #myEmployees .oneEmployee .icons a i
+{
+    margin: 0px 5px;
+    color: rgba(0, 0, 0, 1);
+}
+.mainContent #myEmployees .oneEmployee .activeNow
+{
+    padding: 6px 8px;
+    background: #E9FFEB;
+    border-radius: 30px;
+    width: 100px;
+    text-align: center;
+    float: right;
+}
+.mainContent #myEmployees .oneEmployee .activeNow span i
+{
+    color: rgba(40, 217, 58, 1);
+    font-size: 10px;
+    margin-right: 5px;
+}
+.mainContent #myEmployees .oneEmployee .activeNow span
+{
+    color: rgba(24, 155, 37, 1);
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.mainContent #myEmployees .oneEmployee .inActive
+{
+    padding: 6px 8px;
+    background: #E9FFEB;
+    border-radius: 30px;
+    width: 100px;
+    text-align: center;
+    float: right;
+}
+.mainContent #myEmployees .oneEmployee .inActive span i
+{
+    color: rgba(255, 54, 57, 1);
+    font-size: 10px;
+    margin-right: 5px;
+}
+.mainContent #myEmployees .oneEmployee .inActive span
+{
+    color: rgba(148, 10, 10, 1);
+    font-weight: 700;
+    font-size: 12px;
+}
+
+
+.mainContent #myEmployees .oneEmployee .EmployeeProfile
+{
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 100px;
+    height: 100px;
+    border-radius: 150px;
+    margin-bottom: 10px;
+}
+.mainContent #myEmployees .oneEmployee h2
+{
+    text-align: center;
+    color: rgba(0, 0, 0, 1);
+    font-weight: 700;
+    font-size: 20px;
+}
+.mainContent #myEmployees .oneEmployee h4
+{
+    text-align: center;
+    color:rgba(126, 126, 126, 1);
+    font-weight: 700;
+    font-size: 18px;
+}
+.mainContent #myEmployees .oneEmployee ul
+{
+    margin-top: 20px;
+}
+.mainContent #myEmployees .oneEmployee ul li
+{
+    color: rgba(126, 126, 126, 1);
+    font-weight: 500;
+    font-size: 14px;
+    margin-top: 6px;
+}
+.mainContent #myEmployees .oneEmployee .info
+{
+    margin-bottom: 30px;
+}
+.mainContent #myEmployees .oneEmployee .info li
+{
+    font-weight: 500;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 1);
+    margin-top: 6px;
+}
+.mainContent #myEmployees .oneEmployee ul li i
+{
+    margin-right: 5px;
+}
+.mainContent #myEmployees .oneEmployee ul li span
+{
+    margin-left: 4px;
+    color: rgba(0, 0, 0, 1);
+    font-weight: 700;
+}
+.mainContent #myEmployees .oneEmployee ul li .ex
+{
+    color: rgba(126, 126, 126, 1);
+    font-size: 10px;
+}
+
+.mainContent #myEmployees .oneEmployee .progress-container
+{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 0 auto;
+    margin-top: -33px;
+}
+.mainContent #myEmployees .col-md-5
+{
+    padding: 0px;
+}
+.mainContent #myEmployees .oneEmployee .review
+{
+    text-align: center;
+    font-size: 10px;
+    font-weight: 500;
+    color: rgba(126, 126, 126, 1);
+    display: block;
+    margin-top: 10px;
+}
+
+.mainContent #myEmployees .oneEmployee .progress-circle-bg {
+    fill: none;
+    stroke: #e6e6e6;
+    stroke-width: 10;
+}
+
+.mainContent #myEmployees .oneEmployee .progress-circle-fg {
+    fill: none;
+    stroke: #4db8ff;
+    stroke-width: 10;
+    stroke-dasharray: 282.6; /* Circumference of the circle */
+    stroke-dashoffset: 282.6;
+    transition: stroke-dashoffset 0.35s;
+}
+
+.mainContent #myEmployees .oneEmployee .progress-text {
+    font-size: 20px;
+    fill: #4db8ff;
+    font-weight: 700;
+    font-family: Arial, sans-serif;
 }
