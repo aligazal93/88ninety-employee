@@ -73,7 +73,7 @@
           </div><!--dashboard-->
           <div id="myEmployees" class="tab-pane fade in active">
             <h5>My Employees</h5>
-            <h2>My Employees <a href=""> <i class="fa fa-plus"></i> Add New </a></h2>
+            <h2>My Employees <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#createEmployeeModal"> <i class="fa fa-plus"></i> Add New </button></h2>
             <form action="" class="formSearch">
               <input type="text" placeholder="Search">
               <span> <i class="fa fa-search"></i> </span>
@@ -492,6 +492,89 @@
             Projects
           </div><!--projects-->
         </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--=====================================================================-->
+<div class="modal fade" id="createEmployeeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Create Employee Account</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="personalDetails">
+          <div class="col-md-12">
+            <h4>Personal Details</h4>
+          </div>
+          <hr>
+          <form action="">
+            <div class="col-md-6 col-sm-6 col-xs-12">
+              <label>First name *</label>
+              <input type="text" placeholder="Omar">
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-12">
+              <label>Work Email *</label>
+              <input type="text" placeholder="Osama@gmail.com">
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-12">
+              <label>Last name *</label>
+              <input type="text" placeholder="Zaki">
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-12">
+              <label> Phone Number *</label>
+              <input type="text" placeholder="056665654640">
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-12">
+              <label>Date of Birth</label>
+              <input type="date" placeholder="25/08/2000">
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-12">
+              <label>Location *</label>
+              <input type="text" placeholder="Turkey">
+            </div>
+          </form>
+
+        </div>
+        <div class="jobDetails">
+          <div class="col-md-12">
+            <h4>Job Details</h4>
+          </div>
+          <hr>
+          <form action="">
+            <div class="col-md-6 col-sm-6 col-xs-12">
+              <label>Job Title*</label>
+              <input type="text" placeholder="Designer">
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-12">
+              <label>Manager *</label>
+              <input type="text" placeholder="Ali">
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-12">
+              <label>Role*</label>
+              <input type="text" placeholder="Ali">
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-12">
+              <label> Hourly Rate *</label>
+              <input type="text" placeholder="5.00 $">
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-12">
+              <label>Employee Type *</label>
+              <input type="text" placeholder="Full Time">
+            </div>
+          </form>
+
+        </div>
+        <div class="actions">
+          <button class="cancel" data-dismiss="modal" aria-label="Close"> Cancel </button>
+          <button class="create"> create </button>
+
+        </div>
+
       </div>
     </div>
   </div>

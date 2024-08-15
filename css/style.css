@@ -855,16 +855,18 @@ font-weight: bold;
     font-size: 24px;
     color: rgba(0, 0, 0, 1);
 }
-.mainContent #myEmployees h2 a
+.mainContent #myEmployees h2 button
 {
+    border: none;
     float: right;
     align-items: center;
     background: #0090F5;
     box-shadow: -2px 0px 6.2px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
-    font-size: 12px;
     color: #fff;
     border-radius: 8px;
     width: 170px;
+    outline: none;
+    font-size: 14px;
     text-align: center;
     padding: 14px;
     margin-top: -20px;
@@ -1098,4 +1100,176 @@ font-weight: bold;
     fill: #4db8ff;
     font-weight: 700;
     font-family: Arial, sans-serif;
+}
+#createEmployeeModal .modal-title
+{
+    font-style: normal;
+    font-weight: 500;
+    display: inline-block;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000;
+}
+#createEmployeeModal .modal-content
+{
+    float: left;
+    width: 100%;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+#createEmployeeModal .modal-header
+{
+    border-bottom: none!important;
+}
+
+#createEmployeeModal .modal-header .close
+{
+    margin-top: 0px;
+    opacity: 1;
+    font-size: 47px;
+    color: rgba(126, 126, 126, 1);
+    display: inline-block;
+}
+#createEmployeeModal .personalDetails
+{
+    background: #FFFFFF;
+    border: 1px solid #C0C0C0;
+    border-radius: 12px;
+    float: left;
+    width: 100%;
+}
+#createEmployeeModal .personalDetails h4
+{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #000000;
+    margin-top: 15px;
+}
+#createEmployeeModal .personalDetails hr
+{
+    float: left;
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+#createEmployeeModal .personalDetails form
+{
+    padding-bottom: 20px;
+    float: left;
+    width: 100%;
+}
+#createEmployeeModal .personalDetails form label
+{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    color: #000000;
+display: block;
+}
+#createEmployeeModal .personalDetails form input
+{
+    width: 100%;
+    background: #FAFAFA;
+    border: 1px solid #C0C0C0;
+    border-radius: 8px;
+    outline: none;
+    padding: 12px;
+    margin-bottom: 16px;
+    line-height: 25px;
+}
+
+#createEmployeeModal .personalDetails form input[type="date"]
+{
+    padding: 9px;
+    line-height: 30px;
+}
+#createEmployeeModal .jobDetails
+{
+    background: #FFFFFF;
+    border: 1px solid #C0C0C0;
+    border-radius: 12px;
+    float: left;
+    width: 100%;
+    margin-top: 30px;
+}
+#createEmployeeModal .jobDetails h4
+{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #000000;
+    margin-top: 15px;
+}
+#createEmployeeModal .jobDetails hr
+{
+    float: left;
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+#createEmployeeModal .jobDetails form
+{
+    padding-bottom: 10px;
+    float: left;
+    width: 100%;
+}
+#createEmployeeModal .jobDetails form label
+{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    color: #000000;
+    display: block;
+}
+#createEmployeeModal .jobDetails form input
+{
+    width: 100%;
+    background: #FAFAFA;
+    border: 1px solid #C0C0C0;
+    border-radius: 8px;
+    outline: none;
+    padding: 12px;
+    margin-bottom: 16px;
+    line-height: 25px;
+}
+
+#createEmployeeModal .jobDetails form input[type="date"]
+{
+    padding: 9px;
+    line-height: 30px;
+}
+#createEmployeeModal .actions
+{
+    margin-top: 20px;
+    text-align: center;
+}
+
+#createEmployeeModal .actions .cancel
+{
+    width: 180px;
+    text-align: center;
+    background: #FFFFFF;
+    border: 1px solid #0090F5;
+    border-radius: 8px;
+    padding: 12px;
+    margin-top: 20px;
+    font-size: 18px;
+    margin-right: 20px;
+}
+#createEmployeeModal .actions .create
+{
+    width: 180px;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    border: 1px solid #0090F5;
+    padding: 12px;
+    background: #0090F5;
+    border-radius: 8px;
+    margin-top: 20px;
 }
