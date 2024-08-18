@@ -1374,11 +1374,6 @@ display: block;
     font-size: 14px;
     color: rgba(126, 126, 126, 1);
 }
-
-
-
-
-
 .mainContent .personalDetailsEmployee form
 {
     padding-bottom: 20px;
@@ -1417,11 +1412,6 @@ display: block;
     margin-bottom: 16px;
     line-height: 25px;
 }
-#createEmployeeModal .personalDetails form input[type="date"]
-{
-    padding: 9px;
-    line-height: 30px;
-}
 .mainContent .personalDetailsEmployee form .reset
 {
     position: absolute;
@@ -1429,4 +1419,261 @@ display: block;
     font-weight: 700;
     right: 34px;
     top: 45px;
+}
+.mainContent .jobDetailsEmployee
+{
+    float: left;
+    width: 100%;
+    padding: 20px;
+    margin-top: 40px;
+    background: #FFFFFF;
+    border: 1px solid #C0C0C0;
+    border-radius: 8px;
+}
+.mainContent .jobDetailsEmployee h3
+{
+    margin: 0px;
+    padding: 0px;
+    font-size: 18px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 1);
+}
+.mainContent .jobDetailsEmployee h3 a
+{
+    float: right;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 1);
+}
+.mainContent .jobDetailsEmployee form
+{
+    padding-bottom: 20px;
+    float: left;
+    width: 100%;
+}
+.mainContent .jobDetailsEmployee form label
+{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    color: #000000;
+    display: block;
+}
+.mainContent .jobDetailsEmployee form input
+{
+    width: 100%;
+    background: #FAFAFA;
+    border: 1px solid #C0C0C0;
+    border-radius: 8px;
+    outline: none;
+    padding: 12px;
+    position: relative;
+    margin-bottom: 16px;
+    line-height: 25px;
+}
+.mainContent .jobDetailsEmployee form select
+{
+    width: 100%;
+    background: #FAFAFA;
+    border: 1px solid #C0C0C0;
+    border-radius: 8px;
+    outline: none;
+    padding: 14px;
+    margin-bottom: 16px;
+    line-height: 25px;
+}
+.mainContent .jobDetailsEmployee form .reset
+{
+    position: absolute;
+    text-decoration: underline!important;
+    font-weight: 700;
+    right: 34px;
+    top: 45px;
+}
+.mainContent .jobDetailsEmployee form .hiringDate
+{
+    position: absolute;
+    right: -150px;
+    bottom: 18px;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(80, 80, 80, 1);
+}
+.mainContent .jobDetailsEmployee .allEmployees
+{
+    margin-left: 20px;
+}
+.mainContent .jobDetailsEmployee ul li
+{
+    display: inline-block;
+    font-weight: 700;
+    color: #101010;
+}
+.mainContent .jobDetailsEmployee ul .pf
+{
+    margin-left: -20px;
+}
+
+.mainContent .jobDetailsEmployee ul li:first-child
+{
+    margin-left: 10px;
+}
+.mainContent .jobDetailsEmployee ul li img
+{
+    width: 40px;
+    height: 40px;
+    border-radius: 150px;
+    object-fit: cover !important;
+}
+.mainContent .jobDetailsEmployee ul li a
+{
+    color: rgba(126, 126, 126, 1);
+    font-weight: 700;
+    font-size: 14px;
+    margin-left: 10px;
+}
+.mainContent .jobDetailsEmployee .act
+{
+    color: rgba(149, 149, 149, 1);
+}
+.mainContent .jobDetailsEmployee .switch
+{
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 25px;
+    margin-top: 10px;
+}
+
+.mainContent .jobDetailsEmployee .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.mainContent .jobDetailsEmployee .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #CE2E2E;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.mainContent .jobDetailsEmployee .slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 8px;
+    bottom: 3px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.mainContent .jobDetailsEmployee input:checked + .slider {
+    background-color: rgba(0, 144, 245, 1)
+}
+
+.mainContent .jobDetailsEmployee input:focus + .slider {
+    box-shadow: 0 0 1px rgba(0, 144, 245, 1)
+}
+
+.mainContent .jobDetailsEmployee input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.mainContent .jobDetailsEmployee .slider.round {
+    border-radius: 34px;
+}
+
+.mainContent .jobDetailsEmployee .slider.round:before {
+    border-radius: 50%;
+}
+
+
+.mainContent .paymentDetails
+{
+    float: left;
+    width: 100%;
+    padding: 20px;
+    margin-top: 40px;
+    background: #FFFFFF;
+    border: 1px solid #C0C0C0;
+    border-radius: 8px;
+}
+.mainContent .paymentDetails h3
+{
+    margin: 0px;
+    padding: 0px;
+    font-size: 18px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 1);
+}
+.mainContent .paymentDetails h3 a
+{
+    float: right;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 1);
+}
+.mainContent .paymentDetails form
+{
+    padding-bottom: 20px;
+    float: left;
+    width: 100%;
+}
+.mainContent .paymentDetails form label
+{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    color: #000000;
+    display: block;
+}
+.mainContent .paymentDetails form input
+{
+    width: 100%;
+    background: #FAFAFA;
+    border: 1px solid #C0C0C0;
+    border-radius: 8px;
+    outline: none;
+    padding: 12px;
+    position: relative;
+    margin-bottom: 16px;
+    line-height: 25px;
+}
+.mainContent .paymentDetails form p
+{
+    color: rgba(126, 126, 126, 1);
+    font-size: 14px;
+ margin-top: 15px;
+}
+.mainContent .paymentDetails form p span
+{
+    margin-left: 10px;
+}
+.mainContent .paymentDetails form p span a
+{
+    color: rgba(90, 90, 90, 1);
+    text-decoration: underline!important;
+}
+.mainContent #performance .performance-content
+{
+    float: left;
+    border: 1px solid rgba(192, 192, 192, 1);
+    width: 100%;
+    background-color: #fff;
+    padding: 0px 30px;
+    margin-top: 30px;
+    border-radius: 12px;
 }
