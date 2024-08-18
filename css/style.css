@@ -1273,3 +1273,160 @@ display: block;
     border-radius: 8px;
     margin-top: 20px;
 }
+.mainContent .employee-road ul
+{
+    margin-top: 12px;
+}
+.mainContent .employee-road ul li
+{
+    display: inline-block;
+    margin-right: 4px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.mainContent .employee-road ul li i
+{
+    font-size: 12px;
+}
+.mainContent .employee-road h1
+{
+    font-size: 20px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 1);
+}
+.mainContent .employee-tabs
+{
+
+}
+.mainContent .employee-tabs ul
+{
+    float: left;
+    border-bottom: 1px solid rgba(192, 192, 192, 1);
+    margin-top: 20px;
+    width: 100%;
+    padding-left: 20px;
+}
+.mainContent .employee-tabs ul li
+{
+    display: inline-block;
+    color: rgba(0, 0, 0, 1);
+    margin-right: 50px;
+    font-size: 14px;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+.mainContent .employee-tabs ul li a
+{
+    font-size: 16px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 1);
+}
+.mainContent .employee-tabs ul .active
+{
+    border-bottom: 2px solid rgba(0, 97, 165, 1);
+}
+.mainContent .employee-tabs ul .active a
+{
+    color: rgba(0, 97, 165, 1);
+}
+.mainContent .personalDetailsEmployee
+{
+    float: left;
+    width: 100%;
+    padding: 20px;
+    margin-top: 40px;
+    background: #FFFFFF;
+    border: 1px solid #C0C0C0;
+    border-radius: 8px;
+}
+.mainContent .personalDetailsEmployee h3
+{
+    margin: 0px;
+    padding: 0px;
+    font-size: 18px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 1);
+}
+.mainContent .personalDetailsEmployee h3 a
+{
+    float: right;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 1);
+}
+.mainContent .employeeInfo
+{
+    text-align: center;
+}
+.mainContent .employeeInfo img
+{
+    width: 95px;
+    height: 95px;
+    border-radius: 150px;
+}
+.mainContent .employeeInfo h4
+{
+    font-size: 16px;
+    color: rgba(0, 0, 0, 1);
+    font-weight: 500;
+}
+.mainContent .employeeInfo h6
+{
+    font-size: 14px;
+    color: rgba(126, 126, 126, 1);
+}
+
+
+
+
+
+.mainContent .personalDetailsEmployee form
+{
+    padding-bottom: 20px;
+    float: left;
+    width: 100%;
+}
+.mainContent .personalDetailsEmployee form label
+{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    color: #000000;
+    display: block;
+}
+.mainContent .personalDetailsEmployee form input
+{
+    width: 100%;
+    background: #FAFAFA;
+    border: 1px solid #C0C0C0;
+    border-radius: 8px;
+    outline: none;
+    padding: 12px;
+    position: relative;
+    margin-bottom: 16px;
+    line-height: 25px;
+}
+.mainContent .personalDetailsEmployee form select
+{
+    width: 100%;
+    background: #FAFAFA;
+    border: 1px solid #C0C0C0;
+    border-radius: 8px;
+    outline: none;
+    padding: 14px;
+    margin-bottom: 16px;
+    line-height: 25px;
+}
+#createEmployeeModal .personalDetails form input[type="date"]
+{
+    padding: 9px;
+    line-height: 30px;
+}
+.mainContent .personalDetailsEmployee form .reset
+{
+    position: absolute;
+    text-decoration: underline!important;
+    font-weight: 700;
+    right: 34px;
+    top: 45px;
+}
