@@ -455,6 +455,20 @@ color: rgba(0, 0, 0, 1);
     font-weight: 700;
     font-size: 24px;
 }
+.mainContent .performance-content h2 a
+{
+    float: right;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 32px;
+    font-size: 14px;
+    background: #0090F5;
+    color: #fff;
+    box-shadow: -2px 0px 6.2px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    margin-top: 20px;
+}
 .mainContent .performance-content h5
 {
     color: rgba(126, 126, 126, 1);
@@ -1675,5 +1689,285 @@ display: block;
     background-color: #fff;
     padding: 0px 30px;
     margin-top: 30px;
+    padding-top: 20px;
     border-radius: 12px;
+}
+.mainContent .performance-content h5 button
+{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    text-align: center;
+    margin-left: 8px;
+}
+#meetingModal ul
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#meetingModal ul li
+{
+    display: flex;
+    margin-top: 20px;
+}
+#meetingModal ul li label
+{
+    width: 90px;
+}
+#meetingModal ul li span
+{
+    margin-left: 10px;
+    color: rgba(73, 73, 73, 1);
+    font-size: 14px;
+    font-weight: 400;
+}
+#meetingModal ul li .description
+{
+    margin-left: 20px;
+}
+
+.mainContent #Resume .cv-content
+{
+    float: left;
+    border: 1px solid rgba(192, 192, 192, 1);
+    width: 100%;
+    background-color: #fff;
+    padding: 0px 30px;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-radius: 12px;
+    padding-bottom: 30px;
+}
+.mainContent #Resume .cv-content h2
+{
+    font-size: 22px;
+    font-weight: 600;
+}
+.mainContent #Resume .cv-content h2 a
+{
+    float: right;
+    font-size: 14px;
+    color: #fff;
+    padding: 12px 32px;
+    margin-top: -14px;
+    background: #0090F5;
+    box-shadow: -2px 0px 6.2px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+}
+.mainContent #Resume .cv-content h2 a i
+{
+    margin-right: 5px;
+}
+.mainContent #Resume .cv-content .name h2
+{
+    color: rgba(0, 0, 0, 1);
+    font-weight: 700;
+    font-size: 18px;
+}
+.mainContent #Resume .cv-content .name h3
+{
+    color: rgba(0, 0, 0, 1);
+    font-weight: 400;
+    margin: 0px;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.mainContent #Resume .cv-content .main-info
+{
+    margin-top: 15px;
+}
+.mainContent #Resume .cv-content .main-info h4
+{
+    color: rgba(0, 97, 165, 1);
+    font-size: 18px;
+    font-weight: 700;
+}
+.mainContent #Resume .cv-content .main-info h5
+{
+    color: rgba(0, 97, 165, 1);
+    font-size: 12px;
+    font-weight: 400;
+}
+.mainContent #Resume .cv-content .main-info h6
+{
+    color: rgba(0, 97, 165, 1);
+    font-size: 12px;
+    font-weight: 400;
+    margin: 0px;
+}
+.mainContent #Resume .cv-content .main-info span
+{
+    color: rgba(126, 126, 126, 1);
+    font-size: 12px;
+}
+.mainContent #Resume .cv-content .main-info p
+{
+    color: rgba(0, 0, 0, 1);
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+.mainContent #Resume .cv-content .main-info ul
+{
+    margin-top: 15px;
+}
+.mainContent #Resume .cv-content .main-info ul li
+{
+    margin-top: 10px;
+}
+.mainContent #Resume .cv-content .main-info ul li span
+{
+    margin-left: 5px;
+}
+.mainContent #Resume .cv-content .main-info h1
+{
+    font-size: 14px;
+    color: rgba(126, 126, 126, 1);
+}
+.mainContent #Resume .cv-content .main-info h1 span
+{
+    float: right;
+}
+.mainContent #Resume .cv-content .education-info h4
+{
+    color: rgba(0, 97, 165, 1);
+    font-size: 18px;
+    font-weight: 700;
+}
+.mainContent #Resume .cv-content .education-info h3
+{
+    color: rgba(0, 0, 0, 1);
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0px;
+    margin-bottom: 6px;
+}
+.mainContent #Resume .cv-content .education-info span
+{
+    color: rgba(126, 126, 126, 1);
+    margin-bottom: 12px;
+    display: block;
+}
+.mainContent #Resume .cv-content .certifications-info h4
+{
+    color: rgba(0, 97, 165, 1);
+    font-size: 18px;
+    font-weight: 700;
+}
+.mainContent #Resume .cv-content .certifications-info span
+{
+    text-align: right;
+    float: right;
+    float: right;
+    display: block;
+    width: 100%;
+}
+.mainContent #Resume .cv-content .certifications-info h5
+{
+    color: rgba(0, 0, 0, 1);
+    font-size: 14px;
+    float: left;
+    font-weight: 700;
+    width: 100%;
+    margin: 0px;
+    margin-top: 10px;
+}
+.mainContent #Resume .cv-content .projects-info
+{
+    margin-top: 20px;
+    float: left;
+    width: 100%;
+}
+.mainContent #Resume .cv-content .projects-info h4
+{
+    font-weight: 700;
+    color: rgba(0, 97, 165, 1);
+    font-size: 18px;
+}
+.mainContent #Resume .cv-content .projects-info h3
+{
+    color: rgba(0, 97, 165, 1);
+    font-size: 14px;
+}
+.mainContent #Resume .cv-content .projects-info h3 span
+{
+    float: right;
+    color: rgba(126, 126, 126, 1);
+}
+.mainContent #Resume .cv-content .projects-info p
+{
+    color: rgba(0, 0, 0, 1);
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 12px;
+}
+.mainContent #Resume .cv-content .projects-info h4
+{
+    color: rgba(0, 0, 0, 1);
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 12px;
+}
+.mainContent #Resume .cv-content .projects-info h4 a
+{
+    color: rgba(0, 97, 165, 1);
+    font-size: 14px;
+    text-decoration: underline!important;
+    margin-left: 6px;
+}
+.mainContent #Resume .contact h2
+{
+    color: rgba(0, 97, 165, 1);
+    font-weight: 700;
+    font-size: 20px;
+}
+.mainContent #Resume .contact ul li
+{
+    margin-top: 5px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 1);
+}
+.mainContent #Resume .certifications h2
+{
+    color: rgba(0, 97, 165, 1);
+    font-weight: 700;
+    font-size: 18px;
+}
+.mainContent #Resume .certifications h4
+{
+    color: rgba(0, 0, 0, 1);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 25px;
+}
+.mainContent #Resume .certifications span
+{
+    float: right;
+    text-align: right;
+    color: rgba(126, 126, 126, 1);
+    font-size: 12px;
+    margin-bottom: 12px;
+    display: block;
+    width: 100%;
+}
+.mainContent #Resume .languages h2
+{
+    color: rgba(0, 97, 165, 1);
+    font-weight: 700;
+    font-size: 18px;
+}
+.mainContent #Resume .languages ul li
+{
+    display: block;
+    margin-top: 12px;
+    color: rgba(0, 0, 0, 1);
+
+    font-weight: 700;
+}
+.mainContent #Resume .languages ul li span
+{
+    margin-left: 10px;
+    color: rgba(126, 126, 126, 1);
+    font-size: 12px;
+    width: 150px;
 }
