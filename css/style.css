@@ -1,1312 +1,1352 @@
 @font-face
 {
-    font-family:popp-reg;
-    src: url(../fonts/popp-reg.ttf)
+font-family:popp-reg;
+src: url(../fonts/popp-reg.ttf)
 }
 @font-face
 {
-    font-family:popp-bold;
-    src: url(../fonts/popp-bold.ttf)
+font-family:popp-bold;
+src: url(../fonts/popp-bold.ttf)
 }
 body
 {
-    margin: 0 !important;
-    padding: 0 !important;
-    width: 100%;
-    background-color: rgb(247 247 247);
-    background-repeat: no-repeat;
-    font-family:popp-reg;
-    overflow-x: hidden!important;
-    position: relative;
+margin: 0 !important;
+padding: 0 !important;
+width: 100%;
+background-color: rgb(247 247 247);
+background-repeat: no-repeat;
+font-family:popp-reg;
+overflow-x: hidden!important;
+position: relative;
 }
 html
 {
-    scroll-behavior: smooth;
+scroll-behavior: smooth;
 }
 .the-after
 {
-    position: fixed;
-    left: 0;
-    width: 100%;
-    top: 0;
-    height: 100%;
-    background-color: #1D1D1D;
-    display: none;
-    z-index: 999999999999999999999;
-    opacity: 0.7;
+position: fixed;
+left: 0;
+width: 100%;
+top: 0;
+height: 100%;
+background-color: #1D1D1D;
+display: none;
+z-index: 999999999999999999999;
+opacity: 0.7;
 }
 img
 {
-    object-fit: contain !important;
-    object-position: center center !important;
+object-fit: contain !important;
+object-position: center center !important;
 }
 ul
 {
-    padding: 0;
-    margin: 0 0 0px;
-    list-style: none;
+padding: 0;
+margin: 0 0 0px;
+list-style: none;
 }
 p
 {
-    margin-bottom: 0;
+margin-bottom: 0;
 }
 a
 {
-    text-decoration: none!important;
+text-decoration: none!important;
 }
 .authSection
 {
-    padding: 50px 0px;
+padding: 50px 0px;
 }
 .authSection .logo img
 {
-    padding-bottom: 50px;
+padding-bottom: 50px;
 }
 .authSection .content
 {
 }
 .authSection .content h2
 {
-    color: rgba(0, 0, 0, 1);
-    font-weight: 500;
-    font-size: 36px;
+color: rgba(0, 0, 0, 1);
+font-weight: 500;
+font-size: 36px;
 }
 .authSection .content p
 {
-    color: rgba(0, 0, 0, 1);
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 30px;
+color: rgba(0, 0, 0, 1);
+font-weight: 400;
+font-size: 16px;
+line-height: 30px;
 }
 .authSection .content form
 {
-    margin-top: 30px;
+margin-top: 30px;
 }
 .authSection .content form label
 {
-    display: block;
-    color: rgba(0, 0, 0, 1);
-    font-size: 14px;
-    font-weight: 400;
-    margin-bottom: 6px;
+display: block;
+color: rgba(0, 0, 0, 1);
+font-size: 14px;
+font-weight: 400;
+margin-bottom: 6px;
 }
 .authSection .content form input
 {
-    background: #F5F5F5;
-    border: 1px solid #C0C0C0;
-    border-radius: 8px;
-    width: 100%;
-    position: relative;
+background: #F5F5F5;
+border: 1px solid #C0C0C0;
+border-radius: 8px;
+width: 100%;
+position: relative;
 padding: 10px;
-    margin-bottom: 12px;
-    outline: none;
+margin-bottom: 12px;
+outline: none;
 }
 .authSection .content form .eye
 {
-    position: absolute;
-    right: 18px;
-    cursor: pointer;
-    bottom: 22px;
-    color: rgba(149, 149, 149, 1);
-    font-size: 18px;
+position: absolute;
+right: 18px;
+cursor: pointer;
+bottom: 22px;
+color: rgba(149, 149, 149, 1);
+font-size: 18px;
 }
 .authSection .content .col-md-12 , .authSection .content .col-md-6
 {
-    padding: 0px;
+padding: 0px;
 }
 .authSection .content .rememberMe
 {
-    margin: 5px 0px;
+margin: 5px 0px;
 }
- .authSection .content .forgetPassword
- {
-     margin: 9px 0px;
-     float: right;
- }
+.authSection .content .forgetPassword
+{
+margin: 9px 0px;
+float: right;
+}
 .authSection .content .forgetPassword a
 {
-    font-weight: bold;
-    font-size: 14px;
-    padding-top: 10px;
-    color: #489AEF;
-    transition: all .6s ease-in-out;
+font-weight: bold;
+font-size: 14px;
+padding-top: 10px;
+color: #489AEF;
+transition: all .6s ease-in-out;
 }
 .authSection .content .forgetPassword a:hover
 {
-    color: rgba(255, 164, 6, 1);
+color: rgba(255, 164, 6, 1);
 }
 .authSection .content .rememberMe label
 {
-    display: block;
-    position: relative;
-    padding-top: 3px;
-    padding-left: 35px;
-    margin-bottom: 12px;
-    cursor: pointer;
-    font-size: 14px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+display: block;
+position: relative;
+padding-top: 3px;
+padding-left: 35px;
+margin-bottom: 12px;
+cursor: pointer;
+font-size: 14px;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
 }
 
 /* Hide the browser's default checkbox */
 .authSection .content .rememberMe label input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
+position: absolute;
+opacity: 0;
+cursor: pointer;
+height: 0;
+width: 0;
 }
 
 /* Create a custom checkbox */
 .authSection .content .rememberMe .checkmark {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 25px;
-    width: 25px;
-    background-color: #eee;
+position: absolute;
+top: 0;
+left: 0;
+height: 25px;
+width: 25px;
+background-color: #eee;
 }
 
 /* On mouse-over, add a grey background color */
 .authSection .content .rememberMe:hover input ~ .checkmark {
-    background-color: #ccc;
+background-color: #ccc;
 }
 
 /* When the checkbox is checked, add a blue background */
 .authSection .content .rememberMe input:checked ~ .checkmark {
-    background-color: #2196F3;
+background-color: #2196F3;
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
 .authSection .content .rememberMe .checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
+content: "";
+position: absolute;
+display: none;
 }
 
 /* Show the checkmark when checked */
 .authSection .content .rememberMe input:checked ~ .checkmark:after {
-    display: block;
+display: block;
 }
 
 /* Style the checkmark/indicator */
 .authSection .content .rememberMe .checkmark:after
 {
-    left: 11px;
-    top: 7px;
-    width: 5px;
-    height: 11px;
-    border: solid white;
-    border-width: 0 3px 3px 0;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
+left: 11px;
+top: 7px;
+width: 5px;
+height: 11px;
+border: solid white;
+border-width: 0 3px 3px 0;
+-webkit-transform: rotate(45deg);
+-ms-transform: rotate(45deg);
+transform: rotate(45deg);
 }
 
 .authSection .content .login
 {
-    margin-top: 20px;
-    width: 100%;
-    display: block;
-    color: #fff;
-    padding: 12px;
-    outline: none;
-    border: none;
-    font-weight: bold;
-    transition: all .6s  ease-in-out;
-    font-size: 18px;
-    background: #0090F5;
-    margin-bottom: 30px;
-    box-shadow: -2px 0px 6.1px rgba(0, 0, 0, 0.25), 2px 6px 6px rgba(0, 0, 0, 0.25);
-    border-radius: 9px;
+margin-top: 20px;
+width: 100%;
+display: block;
+color: #fff;
+padding: 12px;
+outline: none;
+border: none;
+font-weight: bold;
+transition: all .6s  ease-in-out;
+font-size: 18px;
+background: #0090F5;
+margin-bottom: 30px;
+box-shadow: -2px 0px 6.1px rgba(0, 0, 0, 0.25), 2px 6px 6px rgba(0, 0, 0, 0.25);
+border-radius: 9px;
 }
 .authSection .content .login:hover
 {
-    background-color: rgba(255, 164, 6, 1);
+background-color: rgba(255, 164, 6, 1);
 }
 .authSection .pic
 {
-    padding: 10px;
+padding: 10px;
 }
 .authSection .pic img
 {
-    width: 100%;
-    transition: all .6s ease-in-out;
+width: 100%;
+transition: all .6s ease-in-out;
 }
 .authSection .pic img:hover
 {
-    transform: scale(1.1);
+transform: scale(1.1);
 }
 .authSection .content .backToSignIn
 {
-    text-align: center;
-    display: block;
-    margin: 0 auto;
-    width: 100%;
-    color: rgba(149, 149, 149, 1);
-    transition: all .6s ease-in-out;
-    margin-bottom: 30px;
+text-align: center;
+display: block;
+margin: 0 auto;
+width: 100%;
+color: rgba(149, 149, 149, 1);
+transition: all .6s ease-in-out;
+margin-bottom: 30px;
 }
 .authSection .content .backToSignIn:hover
 {
-    color:rgba(255, 164, 6, 1);
+color:rgba(255, 164, 6, 1);
 }
 .authSection .content .backToSignIn i
 {
-    margin: 0px 6px;
-    font-size: 16px;
-    top: 1px;
-    position: relative;
+margin: 0px 6px;
+font-size: 16px;
+top: 1px;
+position: relative;
 }
 .authSection .content ul
 {
-    margin-bottom: 20px;
-    margin-top: 10px;
+margin-bottom: 20px;
+margin-top: 10px;
 }
 .authSection .content ul li
 {
-    color: rgba(126, 126, 126, 1);
-    line-height: 22px;
-    font-size: 12px;
-    display: flex;
-    position: relative;
-    align-items: center;
+color: rgba(126, 126, 126, 1);
+line-height: 22px;
+font-size: 12px;
+display: flex;
+position: relative;
+align-items: center;
 }
 .authSection .content ul li i
 {
-    font-size: 4px;
-    margin-right: 12px;
+font-size: 4px;
+margin-right: 12px;
 }
 .sidebarPage
 {
-    position: fixed;
-    left: 0px;
-    top: 0px;
-    width: 120px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px 5px 0px;
-    gap: 56px;
-    background: #FFFFFF;
-    border-right: 1px solid #B7B7B7;
-    text-align: center;
-    height: 100%;
+position: fixed;
+left: 0px;
+top: 0px;
+width: 120px;
+box-sizing: border-box;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 10px 5px 0px;
+gap: 56px;
+background: #FFFFFF;
+border-right: 1px solid #B7B7B7;
+text-align: center;
+height: 100%;
 }
 .sidebarPage .logo img
 {
-    padding: 12px;
-    width: 100%;
+padding: 12px;
+width: 100%;
 }
 .sidebarPage ul
 {
-    margin-top: 20px;
+margin-top: 20px;
 }
 .sidebarPage ul li
 {
-    margin-top: 35px;
+margin-top: 35px;
 }
 .sidebarPage ul li img
 {
-    width: 20px !important;
-    display: block;
-    margin: 0 auto;
-    padding: 0px !important;
-    margin-bottom: 4px;
+width: 20px !important;
+display: block;
+margin: 0 auto;
+padding: 0px !important;
+margin-bottom: 4px;
 }
 .sidebarPage ul li a
 {
-    color: rgba(0, 0, 0, 1);
-    font-size: 12px;
-    font-weight: 400;
+color: rgba(0, 0, 0, 1);
+font-size: 12px;
+font-weight: 400;
 }
 
 .sidebarPage ul li i
 {
-    display: block;
-    margin-bottom: 6px;
-    font-size: 20px;
+display: block;
+margin-bottom: 6px;
+font-size: 20px;
 }
 .sidebarPage ul .active
 {
-    background: #EAEAEA;
-    border-radius: 8px;
-    padding: 6px 0px;
+background: #EAEAEA;
+border-radius: 8px;
+padding: 6px 0px;
 }
 .sidebarPage ul .active img
 {
-    color: red;
+color: red;
 }
 .sidebarPage ul .active i
 {
-    color: rgba(0, 97, 165, 1);
+color: rgba(0, 97, 165, 1);
 }
 .sidebarPage ul .active a
 {
-    color: rgba(0, 97, 165, 1)
+color: rgba(0, 97, 165, 1)
 }
 .mainContent
 {
-    padding: 50px;
-    margin-top: 70px;
-    margin-left: 100px;
+padding: 50px;
+margin-top: 70px;
+margin-left: 100px;
 }
 .mainHeader
 {
-    position: absolute;
-    left: 0px;
-    top: -70px;
-    width: 100%;
-    height: 105px;
-    align-items: center;
-    background: #FFFFFF;
-    text-align: center;
-    border-bottom: 1px solid #B7B7B7;
-    padding: 30px 30px;
+position: absolute;
+left: 0px;
+top: -70px;
+width: 100%;
+height: 105px;
+align-items: center;
+background: #FFFFFF;
+text-align: center;
+border-bottom: 1px solid #B7B7B7;
+padding: 30px 30px;
 }
 .mainHeader .data
 {
-    float: right;
+float: right;
 }
 .mainHeader .data ul
 {
-    align-self: center;
+align-self: center;
 }
 .mainHeader .data ul li
 {
-    margin-right: 16px;
-    display: inline-block;
-    align-items: center;
+margin-right: 16px;
+display: inline-block;
+align-items: center;
 }
 .mainHeader .data ul li a
 {
-    color: rgba(0, 0, 0, 1);
+color: rgba(0, 0, 0, 1);
 }
 .mainHeader .data ul li i
 {
-    font-size: 22px;
+font-size: 22px;
 }
 .mainHeader .data ul .info
 {
-    position: relative
+position: relative
 }
 .mainHeader .data ul .info i
 {
-    font-size: 16px;
+font-size: 16px;
 }
 .mainHeader .data ul .info button
 {
-    border: none;
-    background-color: transparent;
+border: none;
+background-color: transparent;
 }
 .mainHeader .data ul .info button img
 {
-    width: 45px;
+width: 45px;
 }
 .mainHeader .data .dropdown-menu
 {
-    left: -50px;
-    position: absolute;
-    top: 57px;
+left: -50px;
+position: absolute;
+top: 57px;
 }
 .mainHeader .data .dropdown-menu li
 {
-    width: 100%;
+width: 100%;
 }
 .mainHeader .data .dropdown-menu li i
 {
-    margin-right: 10px;
-    font-size: 12px;
+margin-right: 10px;
+font-size: 12px;
 }
 .mainHeader .data .dropdown-menu::after{
-    content: '';
-    position: absolute;
-    left: 66%;
-    top: -10px;
-    width: 0;
-    height: 0;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    background-color: #fff;
-    border-top: 10px solid #ccc;
-    clear: both;
-    transform: rotate(180deg);
+content: '';
+position: absolute;
+left: 66%;
+top: -10px;
+width: 0;
+height: 0;
+border-left: 10px solid transparent;
+border-right: 10px solid transparent;
+background-color: #fff;
+border-top: 10px solid #ccc;
+clear: both;
+transform: rotate(180deg);
 }
 .mainContent .performance-content
 {
-    margin-top: 12px;
+margin-top: 12px;
 }
 .mainContent .performance-content h4
 {
-    margin: 0px;
-    padding: 0px 0px;
+margin: 0px;
+padding: 0px 0px;
 color: rgba(0, 0, 0, 1);
-    font-weight: 400;
-    font-size: 14px;
+font-weight: 400;
+font-size: 14px;
 }
 .mainContent .performance-content h2
 {
-    margin: 20px 0px;
-    padding: 0px 0px;
-    color: rgba(0, 0, 0, 1);
-    font-weight: 700;
-    font-size: 24px;
+margin: 20px 0px;
+padding: 0px 0px;
+color: rgba(0, 0, 0, 1);
+font-weight: 700;
+font-size: 24px;
 }
 .mainContent .performance-content h2 a
 {
-    float: right;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 12px 32px;
-    font-size: 14px;
-    background: #0090F5;
-    color: #fff;
-    box-shadow: -2px 0px 6.2px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 8px;
-    margin-top: 20px;
+float: right;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 12px 32px;
+font-size: 14px;
+background: #0090F5;
+color: #fff;
+box-shadow: -2px 0px 6.2px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 8px;
+margin-top: 20px;
 }
 .mainContent .performance-content h5
 {
-    color: rgba(126, 126, 126, 1);
-    margin: 20px 0px;
-    padding: 0px 0px;
-    font-weight: 500;
-    font-size: 16px;
+color: rgba(126, 126, 126, 1);
+margin: 20px 0px;
+padding: 0px 0px;
+font-weight: 500;
+font-size: 16px;
 }
 .mainContent .performance-content .table
 {
-    border: 1px solid rgba(192, 192, 192, 1);
-    background-color: #fff;
+border: 1px solid rgba(192, 192, 192, 1);
+background-color: #fff;
 }
 .mainContent .performance-content .table thead
 {
-    background: #F4FBFF;
-    border: 1px solid #C0C0C0;
-    text-align: center;
+background: #F4FBFF;
+border: 1px solid #C0C0C0;
+text-align: center;
 }
 .mainContent .performance-content .table thead tr
 {
-    height: 50px;
+height: 50px;
 }
 .mainContent .performance-content .table thead tr th
 {
-    vertical-align: middle;
+vertical-align: middle;
 }
 .mainContent .performance-content .table thead tr th
 {
-    text-align: center;
+text-align: center;
 }
 .mainContent .performance-content .table tbody tr
 {
-    text-align: center;
-    height: 50px;
+text-align: center;
+height: 50px;
 }
 .mainContent .performance-content .table tbody tr td , .mainContent .performance-content .table tbody tr th
 {
-    vertical-align: middle;
-    color: rgba(0, 0, 0, 1);
-    font-size: 14px;
+vertical-align: middle;
+color: rgba(0, 0, 0, 1);
+font-size: 14px;
 }
 .mainContent .performance-content .table tbody tr th
 {
-    padding-left: 15px;
+padding-left: 15px;
 }
 .mainContent .performance-content .table tbody .due
 {
 
-    background: #FFFFCC;
-    border: 1px solid #CA9610;
-    border-radius: 50px;
-    padding: 7px 0px;
-    font-size: 10px;
-    color: rgba(202, 150, 16, 1);
-    font-weight: 700;
-    width: 95px;
-    display: block;
-    margin: 0 auto;
+background: #FFFFCC;
+border: 1px solid #CA9610;
+border-radius: 50px;
+padding: 7px 0px;
+font-size: 10px;
+color: rgba(202, 150, 16, 1);
+font-weight: 700;
+width: 95px;
+display: block;
+margin: 0 auto;
 }
 .mainContent .performance-content .table tbody .due i
 {
 color: rgba(202, 150, 16, 1);
-    margin-right: 8px;
+margin-right: 8px;
 }
 .mainContent .performance-content .table tbody .completed
 {
 
-    background: rgba(233, 255, 235, 1);
-    border: 1px solid rgba(10, 148, 24, 1);
-    border-radius: 50px;
-    padding: 7px 0px;
-    font-size: 10px;
-    color: rgba(10, 148, 24, 1);
-    font-weight: 700;
-    width: 95px;
-    display: block;
-    margin: 0 auto;
+background: rgba(233, 255, 235, 1);
+border: 1px solid rgba(10, 148, 24, 1);
+border-radius: 50px;
+padding: 7px 0px;
+font-size: 10px;
+color: rgba(10, 148, 24, 1);
+font-weight: 700;
+width: 95px;
+display: block;
+margin: 0 auto;
 }
 .mainContent .performance-content .table tbody .completed i
 {
-    color: rgba(10, 148, 24, 1);
-    margin-right: 2px;
-    font-size: 10px;
+color: rgba(10, 148, 24, 1);
+margin-right: 2px;
+font-size: 10px;
 }
 .mainContent .performance-content .table tbody tr td a
 {
-    color: rgba(0, 144, 245, 1);
-    font-weight: 500;
-    font-size: 14px;
-    text-decoration: underline!important;
+color: rgba(0, 144, 245, 1);
+font-weight: 500;
+font-size: 14px;
+text-decoration: underline!important;
 }
 
 
 .mainContent .month-review
 {
-    margin-top: 12px;
+margin-top: 12px;
 }
 .mainContent .month-review h5
 {
-    margin: 0px;
-    padding: 0px 0px;
-    color: rgba(0, 0, 0, 1);
-    font-weight: 400;
-    font-size: 14px;
+margin: 0px;
+padding: 0px 0px;
+color: rgba(0, 0, 0, 1);
+font-weight: 400;
+font-size: 14px;
 }
 .mainContent .month-review h3
 {
-    margin: 20px 0px;
-    padding: 0px 0px;
-    color: rgba(0, 0, 0, 1);
-    font-weight: 700;
-    font-size: 24px;
+margin: 20px 0px;
+padding: 0px 0px;
+color: rgba(0, 0, 0, 1);
+font-weight: 700;
+font-size: 24px;
 }
 
 .mainContent .one
 {
-    cursor: pointer;
-    width: 100%;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
-    margin-bottom: 20px;
-    transition: 0.4s;
-    height: auto;
-    border-radius: 8px;
-    padding: 8px 32px;
-    background: #FFFFFF;
-    border: 1px solid #C0C0C0;
+cursor: pointer;
+width: 100%;
+text-align: left;
+outline: none;
+font-size: 15px;
+margin-bottom: 20px;
+transition: 0.4s;
+height: auto;
+border-radius: 8px;
+padding: 8px 32px;
+background: #FFFFFF;
+border: 1px solid #C0C0C0;
 }
 .mainContent .one .accordion {
-    color: rgba(0, 0, 0, 1);
-    cursor: pointer;
-    width: 100%;
-    text-align: left;
-    outline: none;
-    font-weight: 700;
-    font-size: 15px;
-    transition: 0.4s;
-    background-color: transparent;
-    border: none;
-    border-radius: 8px;
-    padding: 12px 0px;
-    flex: none;
-    flex-grow: 0;
+color: rgba(0, 0, 0, 1);
+cursor: pointer;
+width: 100%;
+text-align: left;
+outline: none;
+font-weight: 700;
+font-size: 15px;
+transition: 0.4s;
+background-color: transparent;
+border: none;
+border-radius: 8px;
+padding: 12px 0px;
+flex: none;
+flex-grow: 0;
 }
 .mainContent .one .accordion:after {
-    content: '\f077';
-    color: #777;
-    font-weight: bold;
-    font-family: "Font Awesome 5 Free";
-    float: right;
-    margin-left: 5px;
+content: '\f077';
+color: #777;
+font-weight: bold;
+font-family: "Font Awesome 5 Free";
+float: right;
+margin-left: 5px;
 }
 
 .mainContent .one .active:after {
-    content: "\f078";
+content: "\f078";
 }
 .mainContent .toolbar .active:after
 {
-    content: none;
+content: none;
 }
 .mainContent .one .panel
 {
-    padding: 0px 0px;
-    margin-bottom: 0px!important;
-    background-color: white;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-    border: none!important;
-    border-radius: 4px;
-    -webkit-box-shadow:none!important;
-    box-shadow: none!important;
+padding: 0px 0px;
+margin-bottom: 0px!important;
+background-color: white;
+max-height: 0;
+overflow: hidden;
+transition: max-height 0.2s ease-out;
+border: none!important;
+border-radius: 4px;
+-webkit-box-shadow:none!important;
+box-shadow: none!important;
 }
 .mainContent .one .panel p
 {
-    font-size: 14px;
-    color: rgba(0, 0, 0, 1);
-    margin-top: 10px;
+font-size: 14px;
+color: rgba(0, 0, 0, 1);
+margin-top: 10px;
 }
 .mainContent .one .panel p span
 {
-    font-weight: bold;
+font-weight: bold;
 }
 .mainContent .one .panel h5
 {
 font-size: 18px;
 font-weight: bold;
-    display: block;
-    margin-top: 20px;
-    float: left;
-    width: 100%;
+display: block;
+margin-top: 20px;
+float: left;
+width: 100%;
 }
 .mainContent .one .panel h6
 {
-    font-size: 12px;
-    display: block;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    float: left;
-    width: 100%;
-    color: rgba(101, 101, 101, 1);
+font-size: 12px;
+display: block;
+margin-top: 10px;
+margin-bottom: 20px;
+float: left;
+width: 100%;
+color: rgba(101, 101, 101, 1);
 }
 .mainContent .one .toolbar
 {
-    align-items: center;
-    width: 80%;
-    background-color: rgb(243 243 243);
-    border: 1px solid #ccc;
-    padding: 10px;
-    float: left;
-    display: block;
-    border-radius: 5px 5px 0 0;
+align-items: center;
+width: 80%;
+background-color: rgb(243 243 243);
+border: 1px solid #ccc;
+padding: 10px;
+float: left;
+display: block;
+border-radius: 5px 5px 0 0;
 }
 .mainContent .one .toolbar button
 {
 
-    background-color: transparent;
-    outline: none;
-    border: none;
+background-color: transparent;
+outline: none;
+border: none;
 }
 .toolbar .active {
-    color: #007bff; /* Active color (e.g., blue) */
+color: #007bff; /* Active color (e.g., blue) */
 }
 .mainContent .one .toolbar button:last-child
 {
-    float: right;
+float: right;
 }
 .mainContent .one .toolbar button:last-child a
 {
-    color: rgba(126, 126, 126, 1);
+color: rgba(126, 126, 126, 1);
 
 }
 .mainContent .one .toolbar button.active {
-   color: rgba(0, 144, 245, 1);
+color: rgba(0, 144, 245, 1);
 }
 
 .mainContent .one .contenteditable
 {
-    width: 80%;
-    height: 250px;
-    border: 1px solid #ccc;
-    border-top: none;
-    padding: 10px;
-    outline: none;
-    background-color: rgb(243 243 243);
-    overflow-y: auto;
-    border-radius: 0 0 5px 5px;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    margin-bottom: 30px;
+width: 80%;
+height: 250px;
+border: 1px solid #ccc;
+border-top: none;
+padding: 10px;
+outline: none;
+background-color: rgb(243 243 243);
+overflow-y: auto;
+border-radius: 0 0 5px 5px;
+flex: none;
+order: 0;
+flex-grow: 0;
+margin-bottom: 30px;
 
 }
 .mainContent .one .contenteditable.placeholder::before {
-    content: attr(data-placeholder);
-    position: absolute;
-    color: #888;
-    pointer-events: none;
-    left: 10px;
-    top: 10px;
+content: attr(data-placeholder);
+position: absolute;
+color: #888;
+pointer-events: none;
+left: 10px;
+top: 10px;
 }
 .mainContent .one hr
 {
-    float: left;
-    width: 100%;
+float: left;
+width: 100%;
 }
 .mainContent .one .employee-answer
 {
-    background: rgba(233, 255, 235, 1);
-    border-radius: 16px;
-    float: left;
-    width: 80%;
+background: rgba(233, 255, 235, 1);
+border-radius: 16px;
+float: left;
+width: 80%;
 }
 .mainContent .one .employee-answer .head
 {
-    padding: 12px 0px;
+padding: 12px 0px;
 }
 .mainContent .one .employee-answer .head h4
 {
-    padding: 0px;
-    margin:6px 0px;
-    font-weight: 700;
-    font-size: 16px;
-    margin-bottom: 8px;
-    color: rgba(0, 0, 0, 1);
+padding: 0px;
+margin:6px 0px;
+font-weight: 700;
+font-size: 16px;
+margin-bottom: 8px;
+color: rgba(0, 0, 0, 1);
 }
 .mainContent .one .employee-answer .head h5
 {
-    padding: 0px;
-    font-weight:400;
-    font-size: 12px;
-    color: rgba(101, 101, 101, 1);
-    margin: 0px;
-    margin-bottom: 10px;
+padding: 0px;
+font-weight:400;
+font-size: 12px;
+color: rgba(101, 101, 101, 1);
+margin: 0px;
+margin-bottom: 10px;
 }
 .mainContent .one .employee-answer .icon
 {
-    float: right;
+float: right;
 }
 .mainContent .one .employee-answer .icon a
 {
-    color: rgb(145 145 145);
-    margin-top: 24px;
-    display: block;
-    font-size: 18px;
-    margin-right: 20px;
+color: rgb(145 145 145);
+margin-top: 24px;
+display: block;
+font-size: 18px;
+margin-right: 20px;
 }
 .mainContent .one .employee-answer .col-md-12
 {
-    padding: 0px;
+padding: 0px;
 }
 .mainContent .one .employee-answer .content
 {
-    border-top: 1px solid rgb(198 193 193);
-    padding: 10px 16px;
+border-top: 1px solid rgb(198 193 193);
+padding: 10px 16px;
 }
 .mainContent .one .employee-answer .content p
 {
-    font-size: 16px;
-    line-height: 25px;
-    font-weight: 400;
-    color: rgba(0, 0, 0, 1);
-    margin-top: 4px!important;
-    margin-bottom: 12px;
+font-size: 16px;
+line-height: 25px;
+font-weight: 400;
+color: rgba(0, 0, 0, 1);
+margin-top: 4px!important;
+margin-bottom: 12px;
 }
 
 .mainContent .one .manager-answer
 {
-    background: rgb(234 234 234);
-    border-radius: 16px;
-    float: right;
-    width: 80%;
-    margin-top: 20px;
-    margin-bottom: 20px;
+background: rgb(234 234 234);
+border-radius: 16px;
+float: right;
+width: 80%;
+margin-top: 20px;
+margin-bottom: 20px;
 }
 .mainContent .one .manager-answer .head
 {
-    padding: 12px 0px;
+padding: 12px 0px;
 }
 .mainContent .one .manager-answer .head h4
 {
-    padding: 0px;
-    margin:6px 0px;
-    font-weight: 700;
-    font-size: 16px;
-    margin-bottom: 8px;
-    color: rgba(0, 0, 0, 1);
+padding: 0px;
+margin:6px 0px;
+font-weight: 700;
+font-size: 16px;
+margin-bottom: 8px;
+color: rgba(0, 0, 0, 1);
 }
 .mainContent .one .manager-answer .head h5
 {
-    padding: 0px;
-    font-weight:400;
-    font-size: 12px;
-    color: rgba(101, 101, 101, 1);
-    margin: 0px;
-    margin-bottom: 10px;
+padding: 0px;
+font-weight:400;
+font-size: 12px;
+color: rgba(101, 101, 101, 1);
+margin: 0px;
+margin-bottom: 10px;
 }
 .mainContent .one .manager-answer .col-md-12
 {
-    padding: 0px;
+padding: 0px;
 }
 .mainContent .one .manager-answer .content
 {
-    border-top: 1px solid rgb(198 193 193);
-    padding: 10px 16px;
+border-top: 1px solid rgb(198 193 193);
+padding: 10px 16px;
 }
 .mainContent .one .manager-answer .content p
 {
-    font-size: 16px;
-    line-height: 25px;
-    font-weight: 400;
-    color: rgba(0, 0, 0, 1);
-    margin-bottom: 12px;
-    margin-top: 4px!important;
+font-size: 16px;
+line-height: 25px;
+font-weight: 400;
+color: rgba(0, 0, 0, 1);
+margin-bottom: 12px;
+margin-top: 4px!important;
 }
 .errorPage
 {
-    margin: 80px 0px;
+margin: 80px 0px;
 }
 .errorPage img
 {
-    display: block;
-    margin: 0 auto;
-    width: 500px;
-    height: auto;
+display: block;
+margin: 0 auto;
+width: 500px;
+height: auto;
 }
 .mainContent #myEmployees h5
 {
-    font-weight: 400;
-    font-size: 14px;
-    color: rgba(0, 0, 0, 1);
+font-weight: 400;
+font-size: 14px;
+color: rgba(0, 0, 0, 1);
 }
 .mainContent #myEmployees h2
 {
-    font-weight: 700;
-    font-size: 24px;
-    color: rgba(0, 0, 0, 1);
+font-weight: 700;
+font-size: 24px;
+color: rgba(0, 0, 0, 1);
 }
 .mainContent #myEmployees h2 button
 {
-    border: none;
-    float: right;
-    align-items: center;
-    background: #0090F5;
-    box-shadow: -2px 0px 6.2px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
-    color: #fff;
-    border-radius: 8px;
-    width: 170px;
-    outline: none;
-    font-size: 14px;
-    text-align: center;
-    padding: 14px;
-    margin-top: -20px;
+border: none;
+float: right;
+align-items: center;
+background: #0090F5;
+box-shadow: -2px 0px 6.2px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+color: #fff;
+border-radius: 8px;
+width: 170px;
+outline: none;
+font-size: 14px;
+text-align: center;
+padding: 14px;
+margin-top: -20px;
 }
 .mainContent #myEmployees h2 a i
 {
-    margin-right: 3px;
+margin-right: 3px;
 }
 .mainContent #myEmployees .formSearch
 {
-    margin-top: 20px;
-    width: 30%;
+margin-top: 20px;
+width: 30%;
 }
 .mainContent #myEmployees .formSearch input
 {
-    width: 100%;
-    background: #FFFFFF;
-    border: 1px solid #C0C0C0;
-    border-radius: 8px;
-    outline: none;
-    padding: 10px;
-    position: relative;
-    padding-left: 40px;
+width: 100%;
+background: #FFFFFF;
+border: 1px solid #C0C0C0;
+border-radius: 8px;
+outline: none;
+padding: 10px;
+position: relative;
+padding-left: 40px;
 }
 .mainContent #myEmployees .formSearch span
 {
-    position: absolute;
-    left: 30px;
-    margin-top: 10px;
-    font-size: 16px;
-    color: rgba(126, 126, 126, 1);
+position: absolute;
+left: 30px;
+margin-top: 10px;
+font-size: 16px;
+color: rgba(126, 126, 126, 1);
 }
 .mainContent #myEmployees .formSearch h6
 {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 18px;
-    color: #7E7E7E;
-    margin-left: 5px;
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 18px;
+color: #7E7E7E;
+margin-left: 5px;
 
 }
 .mainContent #myEmployees .moreIcons
 {
-    float: right;
-    margin-top: -70px;
-    width: 200px;
-    text-align: right;
+float: right;
+margin-top: -70px;
+width: 200px;
+text-align: right;
 }
-.mainContent #myEmployees .moreIcons a i
+.mainContent #myEmployees .moreIcons .sort
 {
-    margin-left: 10px;
-    color: rgba(0, 0, 0, 1);
-    transition: all .6s ease-in-out;
-    font-size: 22px;
+position: relative;
+display: inline-block;
 }
-.mainContent #myEmployees .moreIcons a i:hover
+.mainContent #myEmployees .moreIcons .sort button
 {
-    color: #204d74;
+background-color: transparent;
+outline: none;
+display: inline-block;
+position: relative;
+border: none;
 }
-.mainContent #myEmployees .moreIcons a .arrows
+.mainContent #myEmployees .moreIcons .sort .dropdown-menu
 {
-    transform: rotate(270deg);
+width: auto;
+position: absolute;
+top: 34px;
+margin-left: -50px;
+padding: 0px;
+border-radius: 8px;
+}
+.mainContent #myEmployees .moreIcons .sort .dropdown-menu li
+{
+padding: 5px 0px;
+}
+.mainContent #myEmployees .moreIcons .sort .dropdown-menu li a
+{
+font-weight: 700;
+font-size: 12px;
+}
+.mainContent #myEmployees .moreIcons button
+{
+background-color: transparent;
+outline: none;
+display: inline-block;
+position: relative;
+border: none;
+}
+
+.mainContent #myEmployees .moreIcons button i
+{
+margin-left: 10px;
+color: rgba(0, 0, 0, 1);
+transition: all .6s ease-in-out;
+font-size: 22px;
+}
+.mainContent #myEmployees .moreIcons button i:hover
+{
+color: #204d74;
+}
+.mainContent #myEmployees .moreIcons button .arrows
+{
+transform: rotate(270deg);
 }
 .mainContent #myEmployees .oneEmployee
 {
-    width: 100%;
-    padding: 10px;
-    float: left;
-    background: #FFFFFF;
-    border: 1px solid #C0C0C0;
-    border-radius: 12px;
-    margin-top: 30px;
+width: 100%;
+padding: 10px;
+float: left;
+background: #FFFFFF;
+border: 1px solid #C0C0C0;
+border-radius: 12px;
+margin-top: 30px;
 }
 .mainContent #myEmployees .oneEmployee .icons
 {
-    margin-top: 5px;
+margin-top: 5px;
 }
 .mainContent #myEmployees .oneEmployee .icons a i
 {
-    margin: 0px 5px;
-    color: rgba(0, 0, 0, 1);
+margin: 0px 5px;
+color: rgba(0, 0, 0, 1);
 }
 .mainContent #myEmployees .oneEmployee .activeNow
 {
-    padding: 6px 8px;
-    background: #E9FFEB;
-    border-radius: 30px;
-    width: 100px;
-    text-align: center;
-    float: right;
+padding: 6px 8px;
+background: #E9FFEB;
+border-radius: 30px;
+width: 100px;
+text-align: center;
+float: right;
 }
 .mainContent #myEmployees .oneEmployee .activeNow span i
 {
-    color: rgba(40, 217, 58, 1);
-    font-size: 10px;
-    margin-right: 5px;
+color: rgba(40, 217, 58, 1);
+font-size: 10px;
+margin-right: 5px;
 }
 .mainContent #myEmployees .oneEmployee .activeNow span
 {
-    color: rgba(24, 155, 37, 1);
-    font-weight: 700;
-    font-size: 12px;
+color: rgba(24, 155, 37, 1);
+font-weight: 700;
+font-size: 12px;
 }
 
 .mainContent #myEmployees .oneEmployee .inActive
 {
-    padding: 6px 8px;
-    background: #E9FFEB;
-    border-radius: 30px;
-    width: 100px;
-    text-align: center;
-    float: right;
+padding: 6px 8px;
+background: #E9FFEB;
+border-radius: 30px;
+width: 100px;
+text-align: center;
+float: right;
 }
 .mainContent #myEmployees .oneEmployee .inActive span i
 {
-    color: rgba(255, 54, 57, 1);
-    font-size: 10px;
-    margin-right: 5px;
+color: rgba(255, 54, 57, 1);
+font-size: 10px;
+margin-right: 5px;
 }
 .mainContent #myEmployees .oneEmployee .inActive span
 {
-    color: rgba(148, 10, 10, 1);
-    font-weight: 700;
-    font-size: 12px;
+color: rgba(148, 10, 10, 1);
+font-weight: 700;
+font-size: 12px;
 }
 
 
 .mainContent #myEmployees .oneEmployee .EmployeeProfile
 {
-    display: block;
-    margin: 0 auto;
-    margin-top: 50px;
-    width: 100px;
-    height: 100px;
-    border-radius: 150px;
-    margin-bottom: 10px;
+display: block;
+margin: 0 auto;
+margin-top: 50px;
+width: 100px;
+height: 100px;
+border-radius: 150px;
+margin-bottom: 10px;
 }
 .mainContent #myEmployees .oneEmployee h2
 {
-    text-align: center;
-    color: rgba(0, 0, 0, 1);
-    font-weight: 700;
-    font-size: 20px;
+text-align: center;
+color: rgba(0, 0, 0, 1);
+font-weight: 700;
+font-size: 20px;
 }
 .mainContent #myEmployees .oneEmployee h4
 {
-    text-align: center;
-    color:rgba(126, 126, 126, 1);
-    font-weight: 700;
-    font-size: 18px;
+text-align: center;
+color:rgba(126, 126, 126, 1);
+font-weight: 700;
+font-size: 18px;
 }
 .mainContent #myEmployees .oneEmployee ul
 {
-    margin-top: 20px;
+margin-top: 20px;
 }
 .mainContent #myEmployees .oneEmployee ul li
 {
-    color: rgba(126, 126, 126, 1);
-    font-weight: 500;
-    font-size: 14px;
-    margin-top: 6px;
+color: rgba(126, 126, 126, 1);
+font-weight: 500;
+font-size: 14px;
+margin-top: 6px;
 }
 .mainContent #myEmployees .oneEmployee .info
 {
-    margin-bottom: 30px;
+margin-bottom: 30px;
 }
 .mainContent #myEmployees .oneEmployee .info li
 {
-    font-weight: 500;
-    font-size: 14px;
-    color: rgba(0, 0, 0, 1);
-    margin-top: 6px;
+font-weight: 500;
+font-size: 14px;
+color: rgba(0, 0, 0, 1);
+margin-top: 6px;
 }
 .mainContent #myEmployees .oneEmployee ul li i
 {
-    margin-right: 5px;
+margin-right: 5px;
 }
 .mainContent #myEmployees .oneEmployee ul li span
 {
-    margin-left: 4px;
-    color: rgba(0, 0, 0, 1);
-    font-weight: 700;
+margin-left: 4px;
+color: rgba(0, 0, 0, 1);
+font-weight: 700;
 }
 .mainContent #myEmployees .oneEmployee ul li .ex
 {
-    color: rgba(126, 126, 126, 1);
-    font-size: 10px;
+color: rgba(126, 126, 126, 1);
+font-size: 10px;
 }
 
 .mainContent #myEmployees .oneEmployee .progress-container
 {
-    position: relative;
-    width: 100px;
-    height: 100px;
-    display: block;
-    margin: 0 auto;
-    margin-top: -33px;
+position: relative;
+width: 100px;
+height: 100px;
+display: block;
+margin: 0 auto;
+margin-top: -33px;
 }
 .mainContent #myEmployees .col-md-5
 {
-    padding: 0px;
+padding: 0px;
 }
 .mainContent #myEmployees .oneEmployee .review
 {
-    text-align: center;
-    font-size: 10px;
-    font-weight: 500;
-    color: rgba(126, 126, 126, 1);
-    display: block;
-    margin-top: 10px;
+text-align: center;
+font-size: 10px;
+font-weight: 500;
+color: rgba(126, 126, 126, 1);
+display: block;
+margin-top: 10px;
 }
 
 .mainContent #myEmployees .oneEmployee .progress-circle-bg {
-    fill: none;
-    stroke: #e6e6e6;
-    stroke-width: 10;
+fill: none;
+stroke: #e6e6e6;
+stroke-width: 10;
 }
 
 .mainContent #myEmployees .oneEmployee .progress-circle-fg {
-    fill: none;
-    stroke: #4db8ff;
-    stroke-width: 10;
-    stroke-dasharray: 282.6; /* Circumference of the circle */
-    stroke-dashoffset: 282.6;
-    transition: stroke-dashoffset 0.35s;
+fill: none;
+stroke: #4db8ff;
+stroke-width: 10;
+stroke-dasharray: 282.6; /* Circumference of the circle */
+stroke-dashoffset: 282.6;
+transition: stroke-dashoffset 0.35s;
 }
 
 .mainContent #myEmployees .oneEmployee .progress-text {
-    font-size: 20px;
-    fill: #4db8ff;
-    font-weight: 700;
-    font-family: Arial, sans-serif;
+font-size: 20px;
+fill: #4db8ff;
+font-weight: 700;
+font-family: Arial, sans-serif;
 }
 #createEmployeeModal .modal-title
 {
-    font-style: normal;
-    font-weight: 500;
-    display: inline-block;
-    font-size: 24px;
-    line-height: 36px;
-    color: #000000;
+font-style: normal;
+font-weight: 500;
+display: inline-block;
+font-size: 24px;
+line-height: 36px;
+color: #000000;
 }
 #createEmployeeModal .modal-content
 {
-    float: left;
-    width: 100%;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
+float: left;
+width: 100%;
+padding-bottom: 10px;
+margin-bottom: 20px;
 }
 #createEmployeeModal .modal-header
 {
-    border-bottom: none!important;
+border-bottom: none!important;
 }
 
 #createEmployeeModal .modal-header .close
 {
-    margin-top: 0px;
-    opacity: 1;
-    font-size: 47px;
-    color: rgba(126, 126, 126, 1);
-    display: inline-block;
+margin-top: 0px;
+opacity: 1;
+font-size: 47px;
+color: rgba(126, 126, 126, 1);
+display: inline-block;
 }
 #createEmployeeModal .personalDetails
 {
-    background: #FFFFFF;
-    border: 1px solid #C0C0C0;
-    border-radius: 12px;
-    float: left;
-    width: 100%;
+background: #FFFFFF;
+border: 1px solid #C0C0C0;
+border-radius: 12px;
+float: left;
+width: 100%;
 }
 #createEmployeeModal .personalDetails h4
 {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 30px;
-    color: #000000;
-    margin-top: 15px;
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 30px;
+color: #000000;
+margin-top: 15px;
 }
 #createEmployeeModal .personalDetails hr
 {
-    float: left;
-    width: 100%;
-    margin-top: 0px;
-    margin-bottom: 20px;
+float: left;
+width: 100%;
+margin-top: 0px;
+margin-bottom: 20px;
 }
 #createEmployeeModal .personalDetails form
 {
-    padding-bottom: 20px;
-    float: left;
-    width: 100%;
+padding-bottom: 20px;
+float: left;
+width: 100%;
 }
 #createEmployeeModal .personalDetails form label
 {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 24px;
-    color: #000000;
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 24px;
+color: #000000;
 display: block;
 }
 #createEmployeeModal .personalDetails form input
 {
-    width: 100%;
-    background: #FAFAFA;
-    border: 1px solid #C0C0C0;
-    border-radius: 8px;
-    outline: none;
-    padding: 12px;
-    margin-bottom: 16px;
-    line-height: 25px;
+width: 100%;
+background: #FAFAFA;
+border: 1px solid #C0C0C0;
+border-radius: 8px;
+outline: none;
+padding: 12px;
+margin-bottom: 16px;
+line-height: 25px;
 }
 
 #createEmployeeModal .personalDetails form input[type="date"]
 {
-    padding: 9px;
-    line-height: 30px;
+padding: 9px;
+line-height: 30px;
 }
 #createEmployeeModal .jobDetails
 {
-    background: #FFFFFF;
-    border: 1px solid #C0C0C0;
-    border-radius: 12px;
-    float: left;
-    width: 100%;
-    margin-top: 30px;
+background: #FFFFFF;
+border: 1px solid #C0C0C0;
+border-radius: 12px;
+float: left;
+width: 100%;
+margin-top: 30px;
 }
 #createEmployeeModal .jobDetails h4
 {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 30px;
-    color: #000000;
-    margin-top: 15px;
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 30px;
+color: #000000;
+margin-top: 15px;
 }
 #createEmployeeModal .jobDetails hr
 {
-    float: left;
-    width: 100%;
-    margin-top: 0px;
-    margin-bottom: 20px;
+float: left;
+width: 100%;
+margin-top: 0px;
+margin-bottom: 20px;
 }
 #createEmployeeModal .jobDetails form
 {
-    padding-bottom: 10px;
-    float: left;
-    width: 100%;
+padding-bottom: 10px;
+float: left;
+width: 100%;
 }
 #createEmployeeModal .jobDetails form label
 {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 24px;
-    color: #000000;
-    display: block;
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 24px;
+color: #000000;
+display: block;
 }
 #createEmployeeModal .jobDetails form input
 {
-    width: 100%;
-    background: #FAFAFA;
-    border: 1px solid #C0C0C0;
-    border-radius: 8px;
-    outline: none;
-    padding: 12px;
-    margin-bottom: 16px;
-    line-height: 25px;
+width: 100%;
+background: #FAFAFA;
+border: 1px solid #C0C0C0;
+border-radius: 8px;
+outline: none;
+padding: 12px;
+margin-bottom: 16px;
+line-height: 25px;
 }
 
 #createEmployeeModal .jobDetails form input[type="date"]
 {
-    padding: 9px;
-    line-height: 30px;
+padding: 9px;
+line-height: 30px;
 }
 #createEmployeeModal .actions
 {
-    margin-top: 20px;
-    text-align: center;
+margin-top: 20px;
+text-align: center;
 }
 
 #createEmployeeModal .actions .cancel
 {
-    width: 180px;
-    text-align: center;
-    background: #FFFFFF;
-    border: 1px solid #0090F5;
-    border-radius: 8px;
-    padding: 12px;
-    margin-top: 20px;
-    font-size: 18px;
-    margin-right: 20px;
+width: 180px;
+text-align: center;
+background: #FFFFFF;
+border: 1px solid #0090F5;
+border-radius: 8px;
+padding: 12px;
+margin-top: 20px;
+font-size: 18px;
+margin-right: 20px;
 }
 #createEmployeeModal .actions .create
 {
-    width: 180px;
-    text-align: center;
-    color: #fff;
-    font-size: 18px;
-    border: 1px solid #0090F5;
-    padding: 12px;
-    background: #0090F5;
-    border-radius: 8px;
-    margin-top: 20px;
+width: 180px;
+text-align: center;
+color: #fff;
+font-size: 18px;
+border: 1px solid #0090F5;
+padding: 12px;
+background: #0090F5;
+border-radius: 8px;
+margin-top: 20px;
 }
 .mainContent .employee-road ul
 {
-    margin-top: 12px;
+margin-top: 12px;
 }
 .mainContent .employee-road ul li
 {
-    display: inline-block;
-    margin-right: 4px;
-    font-size: 14px;
-    font-weight: 500;
+display: inline-block;
+margin-right: 4px;
+font-size: 14px;
+font-weight: 500;
 }
 .mainContent .employee-road ul li i
 {
-    font-size: 12px;
+font-size: 12px;
 }
 .mainContent .employee-road h1
 {
-    font-size: 20px;
-    font-weight: 700;
-    color: rgba(0, 0, 0, 1);
+font-size: 20px;
+font-weight: 700;
+color: rgba(0, 0, 0, 1);
 }
 .mainContent .employee-tabs
 {
@@ -1314,660 +1354,801 @@ display: block;
 }
 .mainContent .employee-tabs ul
 {
-    float: left;
-    border-bottom: 1px solid rgba(192, 192, 192, 1);
-    margin-top: 20px;
-    width: 100%;
-    padding-left: 20px;
+float: left;
+border-bottom: 1px solid rgba(192, 192, 192, 1);
+margin-top: 20px;
+width: 100%;
+padding-left: 20px;
 }
 .mainContent .employee-tabs ul li
 {
-    display: inline-block;
-    color: rgba(0, 0, 0, 1);
-    margin-right: 50px;
-    font-size: 14px;
-    font-weight: 500;
-    padding-bottom: 10px;
+display: inline-block;
+color: rgba(0, 0, 0, 1);
+margin-right: 50px;
+font-size: 14px;
+font-weight: 500;
+padding-bottom: 10px;
 }
 .mainContent .employee-tabs ul li a
 {
-    font-size: 16px;
-    font-weight: 700;
-    color: rgba(0, 0, 0, 1);
+font-size: 16px;
+font-weight: 700;
+color: rgba(0, 0, 0, 1);
 }
 .mainContent .employee-tabs ul .active
 {
-    border-bottom: 2px solid rgba(0, 97, 165, 1);
+border-bottom: 2px solid rgba(0, 97, 165, 1);
 }
 .mainContent .employee-tabs ul .active a
 {
-    color: rgba(0, 97, 165, 1);
+color: rgba(0, 97, 165, 1);
 }
 .mainContent .personalDetailsEmployee
 {
-    float: left;
-    width: 100%;
-    padding: 20px;
-    margin-top: 40px;
-    background: #FFFFFF;
-    border: 1px solid #C0C0C0;
-    border-radius: 8px;
+float: left;
+width: 100%;
+padding: 20px;
+margin-top: 40px;
+background: #FFFFFF;
+border: 1px solid #C0C0C0;
+border-radius: 8px;
 }
 .mainContent .personalDetailsEmployee h3
 {
-    margin: 0px;
-    padding: 0px;
-    font-size: 18px;
-    font-weight: 700;
-    color: rgba(0, 0, 0, 1);
+margin: 0px;
+padding: 0px;
+font-size: 18px;
+font-weight: 700;
+color: rgba(0, 0, 0, 1);
 }
 .mainContent .personalDetailsEmployee h3 a
 {
-    float: right;
-    font-size: 16px;
-    color: rgba(0, 0, 0, 1);
+float: right;
+font-size: 16px;
+color: rgba(0, 0, 0, 1);
 }
 .mainContent .employeeInfo
 {
-    text-align: center;
+text-align: center;
 }
 .mainContent .employeeInfo img
 {
-    width: 95px;
-    height: 95px;
-    border-radius: 150px;
+width: 95px;
+height: 95px;
+border-radius: 150px;
 }
 .mainContent .employeeInfo h4
 {
-    font-size: 16px;
-    color: rgba(0, 0, 0, 1);
-    font-weight: 500;
+font-size: 16px;
+color: rgba(0, 0, 0, 1);
+font-weight: 500;
 }
 .mainContent .employeeInfo h6
 {
-    font-size: 14px;
-    color: rgba(126, 126, 126, 1);
+font-size: 14px;
+color: rgba(126, 126, 126, 1);
 }
 .mainContent .personalDetailsEmployee form
 {
-    padding-bottom: 20px;
-    float: left;
-    width: 100%;
+padding-bottom: 20px;
+float: left;
+width: 100%;
 }
 .mainContent .personalDetailsEmployee form label
 {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 24px;
-    color: #000000;
-    display: block;
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 24px;
+color: #000000;
+display: block;
 }
 .mainContent .personalDetailsEmployee form input
 {
-    width: 100%;
-    background: #FAFAFA;
-    border: 1px solid #C0C0C0;
-    border-radius: 8px;
-    outline: none;
-    padding: 12px;
-    position: relative;
-    margin-bottom: 16px;
-    line-height: 25px;
+width: 100%;
+background: #FAFAFA;
+border: 1px solid #C0C0C0;
+border-radius: 8px;
+outline: none;
+padding: 12px;
+position: relative;
+margin-bottom: 16px;
+line-height: 25px;
 }
 .mainContent .personalDetailsEmployee form select
 {
-    width: 100%;
-    background: #FAFAFA;
-    border: 1px solid #C0C0C0;
-    border-radius: 8px;
-    outline: none;
-    padding: 14px;
-    margin-bottom: 16px;
-    line-height: 25px;
+width: 100%;
+background: #FAFAFA;
+border: 1px solid #C0C0C0;
+border-radius: 8px;
+outline: none;
+padding: 14px;
+margin-bottom: 16px;
+line-height: 25px;
 }
 .mainContent .personalDetailsEmployee form .reset
 {
-    position: absolute;
-    text-decoration: underline!important;
-    font-weight: 700;
-    right: 34px;
-    top: 45px;
+position: absolute;
+text-decoration: underline!important;
+font-weight: 700;
+right: 34px;
+top: 45px;
 }
 .mainContent .jobDetailsEmployee
 {
-    float: left;
-    width: 100%;
-    padding: 20px;
-    margin-top: 40px;
-    background: #FFFFFF;
-    border: 1px solid #C0C0C0;
-    border-radius: 8px;
+float: left;
+width: 100%;
+padding: 20px;
+margin-top: 40px;
+background: #FFFFFF;
+border: 1px solid #C0C0C0;
+border-radius: 8px;
 }
 .mainContent .jobDetailsEmployee h3
 {
-    margin: 0px;
-    padding: 0px;
-    font-size: 18px;
-    font-weight: 700;
-    color: rgba(0, 0, 0, 1);
+margin: 0px;
+padding: 0px;
+font-size: 18px;
+font-weight: 700;
+color: rgba(0, 0, 0, 1);
 }
 .mainContent .jobDetailsEmployee h3 a
 {
-    float: right;
-    font-size: 16px;
-    color: rgba(0, 0, 0, 1);
+float: right;
+font-size: 16px;
+color: rgba(0, 0, 0, 1);
 }
 .mainContent .jobDetailsEmployee form
 {
-    padding-bottom: 20px;
-    float: left;
-    width: 100%;
+padding-bottom: 20px;
+float: left;
+width: 100%;
 }
 .mainContent .jobDetailsEmployee form label
 {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 24px;
-    color: #000000;
-    display: block;
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 24px;
+color: #000000;
+display: block;
 }
 .mainContent .jobDetailsEmployee form input
 {
-    width: 100%;
-    background: #FAFAFA;
-    border: 1px solid #C0C0C0;
-    border-radius: 8px;
-    outline: none;
-    padding: 12px;
-    position: relative;
-    margin-bottom: 16px;
-    line-height: 25px;
+width: 100%;
+background: #FAFAFA;
+border: 1px solid #C0C0C0;
+border-radius: 8px;
+outline: none;
+padding: 12px;
+position: relative;
+margin-bottom: 16px;
+line-height: 25px;
 }
 .mainContent .jobDetailsEmployee form select
 {
-    width: 100%;
-    background: #FAFAFA;
-    border: 1px solid #C0C0C0;
-    border-radius: 8px;
-    outline: none;
-    padding: 14px;
-    margin-bottom: 16px;
-    line-height: 25px;
+width: 100%;
+background: #FAFAFA;
+border: 1px solid #C0C0C0;
+border-radius: 8px;
+outline: none;
+padding: 14px;
+margin-bottom: 16px;
+line-height: 25px;
 }
 .mainContent .jobDetailsEmployee form .reset
 {
-    position: absolute;
-    text-decoration: underline!important;
-    font-weight: 700;
-    right: 34px;
-    top: 45px;
+position: absolute;
+text-decoration: underline!important;
+font-weight: 700;
+right: 34px;
+top: 45px;
 }
 .mainContent .jobDetailsEmployee form .hiringDate
 {
-    position: absolute;
-    right: -150px;
-    bottom: 18px;
-    font-size: 14px;
-    font-weight: 500;
-    color: rgba(80, 80, 80, 1);
+position: absolute;
+right: -150px;
+bottom: 18px;
+font-size: 14px;
+font-weight: 500;
+color: rgba(80, 80, 80, 1);
 }
 .mainContent .jobDetailsEmployee .allEmployees
 {
-    margin-left: 20px;
+margin-left: 20px;
 }
 .mainContent .jobDetailsEmployee ul li
 {
-    display: inline-block;
-    font-weight: 700;
-    color: #101010;
+display: inline-block;
+font-weight: 700;
+color: #101010;
 }
 .mainContent .jobDetailsEmployee ul .pf
 {
-    margin-left: -20px;
+margin-left: -20px;
 }
 
 .mainContent .jobDetailsEmployee ul li:first-child
 {
-    margin-left: 10px;
+margin-left: 10px;
 }
 .mainContent .jobDetailsEmployee ul li img
 {
-    width: 40px;
-    height: 40px;
-    border-radius: 150px;
-    object-fit: cover !important;
+width: 40px;
+height: 40px;
+border-radius: 150px;
+object-fit: cover !important;
 }
 .mainContent .jobDetailsEmployee ul li a
 {
-    color: rgba(126, 126, 126, 1);
-    font-weight: 700;
-    font-size: 14px;
-    margin-left: 10px;
+color: rgba(126, 126, 126, 1);
+font-weight: 700;
+font-size: 14px;
+margin-left: 10px;
 }
 .mainContent .jobDetailsEmployee .act
 {
-    color: rgba(149, 149, 149, 1);
+color: rgba(149, 149, 149, 1);
 }
 .mainContent .jobDetailsEmployee .switch
 {
-    position: relative;
-    display: inline-block;
-    width: 60px;
-    margin-left: 10px;
-    margin-right: 10px;
-    height: 25px;
-    margin-top: 10px;
+position: relative;
+display: inline-block;
+width: 60px;
+margin-left: 10px;
+margin-right: 10px;
+height: 25px;
+margin-top: 10px;
 }
 
 .mainContent .jobDetailsEmployee .switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
+opacity: 0;
+width: 0;
+height: 0;
 }
 
 .mainContent .jobDetailsEmployee .slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #CE2E2E;
-    -webkit-transition: .4s;
-    transition: .4s;
+position: absolute;
+cursor: pointer;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: #CE2E2E;
+-webkit-transition: .4s;
+transition: .4s;
 }
 
 .mainContent .jobDetailsEmployee .slider:before {
-    position: absolute;
-    content: "";
-    height: 18px;
-    width: 18px;
-    left: 8px;
-    bottom: 3px;
-    background-color: white;
-    -webkit-transition: .4s;
-    transition: .4s;
+position: absolute;
+content: "";
+height: 18px;
+width: 18px;
+left: 8px;
+bottom: 3px;
+background-color: white;
+-webkit-transition: .4s;
+transition: .4s;
 }
 
 .mainContent .jobDetailsEmployee input:checked + .slider {
-    background-color: rgba(0, 144, 245, 1)
+background-color: rgba(0, 144, 245, 1)
 }
 
 .mainContent .jobDetailsEmployee input:focus + .slider {
-    box-shadow: 0 0 1px rgba(0, 144, 245, 1)
+box-shadow: 0 0 1px rgba(0, 144, 245, 1)
 }
 
 .mainContent .jobDetailsEmployee input:checked + .slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
+-webkit-transform: translateX(26px);
+-ms-transform: translateX(26px);
+transform: translateX(26px);
 }
 
 /* Rounded sliders */
 .mainContent .jobDetailsEmployee .slider.round {
-    border-radius: 34px;
+border-radius: 34px;
 }
 
 .mainContent .jobDetailsEmployee .slider.round:before {
-    border-radius: 50%;
+border-radius: 50%;
 }
 
 
 .mainContent .paymentDetails
 {
-    float: left;
-    width: 100%;
-    padding: 20px;
-    margin-top: 40px;
-    background: #FFFFFF;
-    border: 1px solid #C0C0C0;
-    border-radius: 8px;
+float: left;
+width: 100%;
+padding: 20px;
+margin-top: 40px;
+background: #FFFFFF;
+border: 1px solid #C0C0C0;
+border-radius: 8px;
 }
 .mainContent .paymentDetails h3
 {
-    margin: 0px;
-    padding: 0px;
-    font-size: 18px;
-    font-weight: 700;
-    color: rgba(0, 0, 0, 1);
+margin: 0px;
+padding: 0px;
+font-size: 18px;
+font-weight: 700;
+color: rgba(0, 0, 0, 1);
 }
 .mainContent .paymentDetails h3 a
 {
-    float: right;
-    font-size: 16px;
-    color: rgba(0, 0, 0, 1);
+float: right;
+font-size: 16px;
+color: rgba(0, 0, 0, 1);
 }
 .mainContent .paymentDetails form
 {
-    padding-bottom: 20px;
-    float: left;
-    width: 100%;
+padding-bottom: 20px;
+float: left;
+width: 100%;
 }
 .mainContent .paymentDetails form label
 {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 24px;
-    color: #000000;
-    display: block;
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 24px;
+color: #000000;
+display: block;
 }
 .mainContent .paymentDetails form input
 {
-    width: 100%;
-    background: #FAFAFA;
-    border: 1px solid #C0C0C0;
-    border-radius: 8px;
-    outline: none;
-    padding: 12px;
-    position: relative;
-    margin-bottom: 16px;
-    line-height: 25px;
+width: 100%;
+background: #FAFAFA;
+border: 1px solid #C0C0C0;
+border-radius: 8px;
+outline: none;
+padding: 12px;
+position: relative;
+margin-bottom: 16px;
+line-height: 25px;
 }
 .mainContent .paymentDetails form p
 {
-    color: rgba(126, 126, 126, 1);
-    font-size: 14px;
- margin-top: 15px;
+color: rgba(126, 126, 126, 1);
+font-size: 14px;
+margin-top: 15px;
 }
 .mainContent .paymentDetails form p span
 {
-    margin-left: 10px;
+margin-left: 10px;
 }
 .mainContent .paymentDetails form p span a
 {
-    color: rgba(90, 90, 90, 1);
-    text-decoration: underline!important;
+color: rgba(90, 90, 90, 1);
+text-decoration: underline!important;
 }
 .mainContent #performance .performance-content
 {
-    float: left;
-    border: 1px solid rgba(192, 192, 192, 1);
-    width: 100%;
-    background-color: #fff;
-    padding: 0px 30px;
-    margin-top: 30px;
-    padding-top: 20px;
-    border-radius: 12px;
+float: left;
+border: 1px solid rgba(192, 192, 192, 1);
+width: 100%;
+background-color: #fff;
+padding: 0px 30px;
+margin-top: 30px;
+padding-top: 20px;
+border-radius: 12px;
 }
 .mainContent .performance-content h5 button
 {
-    background-color: transparent;
-    border: none;
-    outline: none;
-    text-align: center;
-    margin-left: 8px;
+background-color: transparent;
+border: none;
+outline: none;
+text-align: center;
+margin-left: 8px;
 }
 #meetingModal ul
 {
-    margin-top: 20px;
-    margin-bottom: 20px;
+margin-top: 20px;
+margin-bottom: 20px;
 }
 #meetingModal ul li
 {
-    display: flex;
-    margin-top: 20px;
+display: flex;
+margin-top: 20px;
 }
 #meetingModal ul li label
 {
-    width: 90px;
+width: 90px;
 }
 #meetingModal ul li span
 {
-    margin-left: 10px;
-    color: rgba(73, 73, 73, 1);
-    font-size: 14px;
-    font-weight: 400;
+margin-left: 10px;
+color: rgba(73, 73, 73, 1);
+font-size: 14px;
+font-weight: 400;
 }
 #meetingModal ul li .description
 {
-    margin-left: 20px;
+margin-left: 20px;
 }
 
 .mainContent #Resume .cv-content
 {
-    float: left;
-    border: 1px solid rgba(192, 192, 192, 1);
-    width: 100%;
-    background-color: #fff;
-    padding: 0px 30px;
-    margin-top: 30px;
-    padding-top: 20px;
-    border-radius: 12px;
-    padding-bottom: 30px;
+float: left;
+border: 1px solid rgba(192, 192, 192, 1);
+width: 100%;
+background-color: #fff;
+padding: 0px 30px;
+margin-top: 30px;
+padding-top: 20px;
+border-radius: 12px;
+padding-bottom: 30px;
 }
 .mainContent #Resume .cv-content h2
 {
-    font-size: 22px;
-    font-weight: 600;
+font-size: 22px;
+font-weight: 600;
 }
 .mainContent #Resume .cv-content h2 a
 {
-    float: right;
-    font-size: 14px;
-    color: #fff;
-    padding: 12px 32px;
-    margin-top: -14px;
-    background: #0090F5;
-    box-shadow: -2px 0px 6.2px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 8px;
+float: right;
+font-size: 14px;
+color: #fff;
+padding: 12px 32px;
+margin-top: -14px;
+background: #0090F5;
+box-shadow: -2px 0px 6.2px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 8px;
 }
 .mainContent #Resume .cv-content h2 a i
 {
-    margin-right: 5px;
+margin-right: 5px;
 }
 .mainContent #Resume .cv-content .name h2
 {
-    color: rgba(0, 0, 0, 1);
-    font-weight: 700;
-    font-size: 18px;
+color: rgba(0, 0, 0, 1);
+font-weight: 700;
+font-size: 18px;
 }
 .mainContent #Resume .cv-content .name h3
 {
-    color: rgba(0, 0, 0, 1);
-    font-weight: 400;
-    margin: 0px;
-    font-size: 18px;
-    margin-bottom: 30px;
+color: rgba(0, 0, 0, 1);
+font-weight: 400;
+margin: 0px;
+font-size: 18px;
+margin-bottom: 30px;
 }
 .mainContent #Resume .cv-content .main-info
 {
-    margin-top: 15px;
+margin-top: 15px;
 }
 .mainContent #Resume .cv-content .main-info h4
 {
-    color: rgba(0, 97, 165, 1);
-    font-size: 18px;
-    font-weight: 700;
+color: rgba(0, 97, 165, 1);
+font-size: 18px;
+font-weight: 700;
 }
 .mainContent #Resume .cv-content .main-info h5
 {
-    color: rgba(0, 97, 165, 1);
-    font-size: 12px;
-    font-weight: 400;
+color: rgba(0, 97, 165, 1);
+font-size: 12px;
+font-weight: 400;
 }
 .mainContent #Resume .cv-content .main-info h6
 {
-    color: rgba(0, 97, 165, 1);
-    font-size: 12px;
-    font-weight: 400;
-    margin: 0px;
+color: rgba(0, 97, 165, 1);
+font-size: 12px;
+font-weight: 400;
+margin: 0px;
 }
 .mainContent #Resume .cv-content .main-info span
 {
-    color: rgba(126, 126, 126, 1);
-    font-size: 12px;
+color: rgba(126, 126, 126, 1);
+font-size: 12px;
 }
 .mainContent #Resume .cv-content .main-info p
 {
-    color: rgba(0, 0, 0, 1);
-    font-size: 16px;
-    font-weight: 400;
-    margin-top: 10px;
+color: rgba(0, 0, 0, 1);
+font-size: 16px;
+font-weight: 400;
+margin-top: 10px;
 }
 .mainContent #Resume .cv-content .main-info ul
 {
-    margin-top: 15px;
+margin-top: 15px;
 }
 .mainContent #Resume .cv-content .main-info ul li
 {
-    margin-top: 10px;
+margin-top: 10px;
 }
 .mainContent #Resume .cv-content .main-info ul li span
 {
-    margin-left: 5px;
+margin-left: 5px;
 }
 .mainContent #Resume .cv-content .main-info h1
 {
-    font-size: 14px;
-    color: rgba(126, 126, 126, 1);
+font-size: 14px;
+color: rgba(126, 126, 126, 1);
 }
 .mainContent #Resume .cv-content .main-info h1 span
 {
-    float: right;
+float: right;
 }
 .mainContent #Resume .cv-content .education-info h4
 {
-    color: rgba(0, 97, 165, 1);
-    font-size: 18px;
-    font-weight: 700;
+color: rgba(0, 97, 165, 1);
+font-size: 18px;
+font-weight: 700;
 }
 .mainContent #Resume .cv-content .education-info h3
 {
-    color: rgba(0, 0, 0, 1);
-    font-size: 14px;
-    font-weight: 500;
-    margin: 0px;
-    margin-bottom: 6px;
+color: rgba(0, 0, 0, 1);
+font-size: 14px;
+font-weight: 500;
+margin: 0px;
+margin-bottom: 6px;
 }
 .mainContent #Resume .cv-content .education-info span
 {
-    color: rgba(126, 126, 126, 1);
-    margin-bottom: 12px;
-    display: block;
+color: rgba(126, 126, 126, 1);
+margin-bottom: 12px;
+display: block;
 }
 .mainContent #Resume .cv-content .certifications-info h4
 {
-    color: rgba(0, 97, 165, 1);
-    font-size: 18px;
-    font-weight: 700;
+color: rgba(0, 97, 165, 1);
+font-size: 18px;
+font-weight: 700;
 }
 .mainContent #Resume .cv-content .certifications-info span
 {
-    text-align: right;
-    float: right;
-    float: right;
-    display: block;
-    width: 100%;
+text-align: right;
+float: right;
+float: right;
+display: block;
+width: 100%;
 }
 .mainContent #Resume .cv-content .certifications-info h5
 {
-    color: rgba(0, 0, 0, 1);
-    font-size: 14px;
-    float: left;
-    font-weight: 700;
-    width: 100%;
-    margin: 0px;
-    margin-top: 10px;
+color: rgba(0, 0, 0, 1);
+font-size: 14px;
+float: left;
+font-weight: 700;
+width: 100%;
+margin: 0px;
+margin-top: 10px;
 }
 .mainContent #Resume .cv-content .projects-info
 {
-    margin-top: 20px;
-    float: left;
-    width: 100%;
+margin-top: 20px;
+float: left;
+width: 100%;
 }
 .mainContent #Resume .cv-content .projects-info h4
 {
-    font-weight: 700;
-    color: rgba(0, 97, 165, 1);
-    font-size: 18px;
+font-weight: 700;
+color: rgba(0, 97, 165, 1);
+font-size: 18px;
 }
 .mainContent #Resume .cv-content .projects-info h3
 {
-    color: rgba(0, 97, 165, 1);
-    font-size: 14px;
+color: rgba(0, 97, 165, 1);
+font-size: 14px;
 }
 .mainContent #Resume .cv-content .projects-info h3 span
 {
-    float: right;
-    color: rgba(126, 126, 126, 1);
+float: right;
+color: rgba(126, 126, 126, 1);
 }
 .mainContent #Resume .cv-content .projects-info p
 {
-    color: rgba(0, 0, 0, 1);
-    font-size: 16px;
-    font-weight: 400;
-    margin-top: 12px;
+color: rgba(0, 0, 0, 1);
+font-size: 16px;
+font-weight: 400;
+margin-top: 12px;
 }
 .mainContent #Resume .cv-content .projects-info h4
 {
-    color: rgba(0, 0, 0, 1);
-    font-size: 16px;
-    font-weight: 700;
-    margin-top: 12px;
+color: rgba(0, 0, 0, 1);
+font-size: 16px;
+font-weight: 700;
+margin-top: 12px;
 }
 .mainContent #Resume .cv-content .projects-info h4 a
 {
-    color: rgba(0, 97, 165, 1);
-    font-size: 14px;
-    text-decoration: underline!important;
-    margin-left: 6px;
+color: rgba(0, 97, 165, 1);
+font-size: 14px;
+text-decoration: underline!important;
+margin-left: 6px;
 }
 .mainContent #Resume .contact h2
 {
-    color: rgba(0, 97, 165, 1);
-    font-weight: 700;
-    font-size: 20px;
+color: rgba(0, 97, 165, 1);
+font-weight: 700;
+font-size: 20px;
 }
 .mainContent #Resume .contact ul li
 {
-    margin-top: 5px;
-    font-weight: 700;
-    color: rgba(0, 0, 0, 1);
+margin-top: 5px;
+font-weight: 700;
+color: rgba(0, 0, 0, 1);
 }
 .mainContent #Resume .certifications h2
 {
-    color: rgba(0, 97, 165, 1);
-    font-weight: 700;
-    font-size: 18px;
+color: rgba(0, 97, 165, 1);
+font-weight: 700;
+font-size: 18px;
 }
 .mainContent #Resume .certifications h4
 {
-    color: rgba(0, 0, 0, 1);
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 25px;
+color: rgba(0, 0, 0, 1);
+font-size: 14px;
+font-weight: 700;
+line-height: 25px;
 }
 .mainContent #Resume .certifications span
 {
-    float: right;
-    text-align: right;
-    color: rgba(126, 126, 126, 1);
-    font-size: 12px;
-    margin-bottom: 12px;
-    display: block;
-    width: 100%;
+float: right;
+text-align: right;
+color: rgba(126, 126, 126, 1);
+font-size: 12px;
+margin-bottom: 12px;
+display: block;
+width: 100%;
 }
 .mainContent #Resume .languages h2
 {
-    color: rgba(0, 97, 165, 1);
-    font-weight: 700;
-    font-size: 18px;
+color: rgba(0, 97, 165, 1);
+font-weight: 700;
+font-size: 18px;
 }
 .mainContent #Resume .languages ul li
 {
-    display: block;
-    margin-top: 12px;
-    color: rgba(0, 0, 0, 1);
+display: block;
+margin-top: 12px;
+color: rgba(0, 0, 0, 1);
 
-    font-weight: 700;
+font-weight: 700;
 }
 .mainContent #Resume .languages ul li span
 {
-    margin-left: 10px;
-    color: rgba(126, 126, 126, 1);
-    font-size: 12px;
-    width: 150px;
+margin-left: 10px;
+color: rgba(126, 126, 126, 1);
+font-size: 12px;
+width: 150px;
+}
+#filterModal .modal-header h5
+{
+font-weight: 500;
+font-size: 20px;
+}
+#filterModal .modal-header .close
+{
+margin-top: -40px;
+opacity: 1;
+font-size: 50px;
+}
+#filterModal .modal-content
+{
+float: left;
+width: 100%;
+padding-bottom: 10px;
+}
+#filterModal .modal-content .filterContent h4
+{
+font-weight: 700;
+font-size: 20px;
+margin-bottom: 20px;
+display: block;
+}
+#filterModal .modal-content .filterContent .search
+{
+    margin-bottom: 10px;
+}
+#filterModal .modal-content .filterContent .search input
+{
+width: 100%;
+outline: none;
+background: #EAEAEA;
+border-radius: 8px;
+border: none;
+position: relative;
+padding: 15px;
+padding-left:45px;
+}
+#filterModal .modal-content .filterContent .search i
+{
+position: absolute;
+left: 12px;
+top: 15px;
+color: rgba(126, 126, 126, 1);
+font-size: 20px;
+}
+
+#filterModal .modal-content .location
+{
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 0px;
+    display: block;
+    float: left;
+    color: rgba(0, 0, 0, 1);
+    margin-bottom: 20px;
+    width: 100%;
+}
+#filterModal .modal-content .col-md-12
+{
+    padding: 0px;
+}
+#filterModal .modal-content hr
+{
+    float: left;
+    width: 100%;
+}
+
+#filterModal .modal-content .custom-radio input[type="radio"] {
+    display: none;
+}
+#filterModal .modal-content .custom-radio
+{
+    margin-top: 10px;
+}
+#filterModal .modal-content .allJobs , #filterModal .modal-content .allLocations
+{
+    height:165px;
+    padding-top: 10px;
+    overflow-y: scroll;
+}
+/* Create a custom radio button appearance */
+#filterModal .modal-content .custom-radio label {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 10px; /* Space between radio buttons */
+}
+
+/* Radio button styling */
+#filterModal .modal-content .custom-radio .radio-box {
+    width: 20px;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 4px;
+    position: relative;
+    transition: background-color 0.2s;
+    margin-right: 8px; /* Space between radio button and text */
+}
+
+/* Add checkmark inside the radio button */
+#filterModal .modal-content .custom-radio .radio-box:before {
+    content: "";
+    position: absolute;
+    top: 44%;
+    left: 50%;
+    width: 6px;
+    height: 12px;
+    border: solid rgba(0, 144, 245, 1); /* Green color */
+    border-width: 0 2px 2px 0;
+    transform: translate(-50%, -50%) rotate(45deg) scale(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Show the checkmark when the radio button is selected */
+#filterModal .modal-content .custom-radio input[type="radio"]:checked + label .radio-box {
+    background-color: rgba(40, 217, 58, 0.2);
+}
+
+#filterModal .modal-content .custom-radio input[type="radio"]:checked + label .radio-box:before {
+    transform: translate(-50%, -50%) rotate(45deg) scale(1);
+}
+#filterModal .modal-content .actions
+{
+    text-align: center;
+}
+#filterModal .modal-content .actions button
+{
+    width: 170px;
+    padding: 14px;
+    text-align: center;
+    transition: all .6s ease-in-out;
+    align-items: center;
+    background: #FFFFFF;
+    border: 1px solid #0090F5;
+    border-radius: 8px;
+    margin-right: 15px;
+    color: #0090F5;
+    font-weight: 700;
 }
